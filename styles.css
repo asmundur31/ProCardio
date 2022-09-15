@@ -1,0 +1,12 @@
+body, html {
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#video {
+  width: 70%;
+  margin: 10px;
+}
