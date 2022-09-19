@@ -15,16 +15,17 @@
 
 <body>
   <h1>Hello World</h1>
-  <dev class="container">
-    <dev class="row">
-      <dev class="col-12 d-flex justify-content-center">
-        <video id="video">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video id="video" controls>
           <source src="videos/VirtualRunning.mp4" type="video/mp4">
         </video>
-      </dev>
-      <dev class="col-12 d-flex justify-content-center">
-        <dev class="video_controls mb-3">
-          <button type="button" class="btn btn-outline-primary" id="button_slower">
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="video_controls">
+          <button type="button" class="btn btn-outline-primary"
+            id="button_slower">
             -
           </button>
           <button type="button" class="btn btn-success" id="button_start">
@@ -33,28 +34,118 @@
           <button type="button" class="btn btn-danger" id="button_stop">
             Stop
           </button>
-          <button type="button" class="btn btn-outline-primary" id="button_faster">
+          <button type="button" class="btn btn-outline-primary"
+            id="button_faster">
             +
           </button>
-        </dev>
-      </dev>
-      <dev class="col-12 d-flex justify-content-center">
-        <div class="mb-3">
-          <h5 class="video_speed_title">Video speed:
-            <span class="video_speed" id="video_speed">
-              1x
-            </span>
-          </h3>
         </div>
-      </dev>
-      <dev class="col-12 d-flex justify-content-center">
+      </div>
+      <div class="col-12 d-flex justify-content-center mt-5">
+        <h5 class="video_speed_title">Video speed:
+          <span class="video_speed" id="video_speed">
+            1x
+          </span>
+        </h5>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
         <input type="number" id="new_speed">
-        <button type="button" class="btn btn-outline-primary ml-3" id="button_new_speed">Set speed</button>
-      </dev>
-    </dev>
-  </dev>
+        <button type="button" class="btn btn-outline-primary"
+          id="button_new_speed">Set speed</button>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3>
+          HR sensor
+        </h3>
+      </div>
+      <div class="col-12">
+        <div class="connection_hr">
+          <button type="button" class="btn btn-outline-primary" id="connect_hr">
+            Connect
+          </button>
+          <button type="button" class="btn btn-outline-primary"
+            id="disconnect_hr">
+            Disconnect
+          </button>
+        </div>
+      </div>
+      <div class="col-12">
+        <span id="hr_text">
+          HR: 0 bpm
+        </span>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3>
+          Treadmill
+        </h3>
+      </div>
+      <div class="col-12">
+        <div class="connection_treadmill">
+          <button type="button" class="btn btn-outline-primary"
+            id="connect_treadmill">
+            Connect
+          </button>
+          <button type="button" class="btn btn-outline-primary"
+            id="disconnect_treadmill">
+            Disconnect
+          </button>
+        </div>
+      </div>
+      <div class="col-12">
+        <span id="treadmill_speed_text">
+          Speed: 0 km/h
+        </span>
+      </div>
+      <div class="col-12">
+        <span id="treadmill_incline_text">
+          Incline: 0 %
+        </span>
+      </div>
+      <div class="col-12">
+        <span id="treadmill_distance_text">
+          Distance: 0 m
+        </span>
+      </div>
+      <div class="col-12">
+        <div class="d-none" id="control_treadmill">
+          <div class="row">
+            <div class="col-4">
+              <button type="button" class="btn btn-success"
+                id="start_treadmill">
+                Start
+              </button>
+              <button type="button" class="btn btn-danger" id="stop_treadmill">
+                Stop
+              </button>
+            </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-12">
+                  <input type="number" id="new_treadmill_speed">
+                  <button type="button" class="btn btn-outline-primary"
+                    id="button_new_treadmill_speed">Set speed</button>
+                </div>
+                <div class="col-12">
+                  <input type="number" id="new_treadmill_incline">
+                  <button type="button" class="btn btn-outline-primary"
+                    id="button_new_treadmill_incline">Set incline</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src="treadmillDevice.js"></script>
+  <script src="hrDevice.js"></script>
   <script src="video.js"></script>
+  <script src="app.js"></script>
+
 </body>
 
 </html>
