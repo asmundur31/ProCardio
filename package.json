@@ -1,0 +1,28 @@
+{
+  "name": "treadmill",
+  "description": "This repository has all the code and data concerning the Treadmill project for HL2032/HE1040/HL2041 HT22 Medical Engineering, Project Course, Autumn 2022",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmundur31/Treadmill.git"
+  },
+  "author": "Ásmundur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmundur31/Treadmill/issues"
+  },
+  "homepage": "https://github.com/asmundur31/Treadmill#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
