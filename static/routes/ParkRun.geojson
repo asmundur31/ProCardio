@@ -1,0 +1,940 @@
+{
+  "type": "FeatureCollection",
+  "name": "track_points",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 0,
+        "ele": 32.503
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957159792,
+          40.797959496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 1,
+        "ele": 32.493
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957099754,
+          40.79786054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 2,
+        "ele": 32.728
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957045969,
+          40.797749637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 3,
+        "ele": 33.121
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957027068,
+          40.797636168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 4,
+        "ele": 33.343
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957037434,
+          40.797531231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 5,
+        "ele": 33.508
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95704676699999,
+          40.797445026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 6,
+        "ele": 33.56
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957035969,
+          40.79734722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 7,
+        "ele": 33.1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957050616,
+          40.79723129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 8,
+        "ele": 32.762
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956999636,
+          40.797127995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 9,
+        "ele": 32.119
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95695924899999,
+          40.797002054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 10,
+        "ele": 31.295
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956891561,
+          40.796912867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 11,
+        "ele": 29.836
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956831045,
+          40.796773982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 12,
+        "ele": 29.373
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956827737,
+          40.796645666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 13,
+        "ele": 28.911
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956809689,
+          40.796527469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 14,
+        "ele": 28.737
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95684812899999,
+          40.796423536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 15,
+        "ele": 28.497
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95685778799999,
+          40.796329348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 16,
+        "ele": 28.247
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.956897758,
+          40.796230169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 17,
+        "ele": 27.843
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95695294,
+          40.796135149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 18,
+        "ele": 27.283
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95701825499999,
+          40.796036182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 19,
+        "ele": 26.637
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957123493,
+          40.795961541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 20,
+        "ele": 25.902
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95725135799999,
+          40.795888466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 21,
+        "ele": 25.268
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957335868,
+          40.795792769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 22,
+        "ele": 25.281
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957433279,
+          40.795743874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 23,
+        "ele": 24.533
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957501224,
+          40.795648792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 24,
+        "ele": 24.825
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957605653,
+          40.795613034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 25,
+        "ele": 25.069
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957713728,
+          40.795591878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 26,
+        "ele": 24.448
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95781565199999,
+          40.795521893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 27,
+        "ele": 24.096
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95796518,
+          40.795493612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 28,
+        "ele": 22.866
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95810850399999,
+          40.795420835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 29,
+        "ele": 21.686
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958270371,
+          40.795374154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 30,
+        "ele": 21.157
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958420765,
+          40.795351173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 31,
+        "ele": 20.458
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958561898,
+          40.795312181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 32,
+        "ele": 19.889
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958672818,
+          40.795264304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 33,
+        "ele": 19.52
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958732435,
+          40.795214879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 34,
+        "ele": 19.404
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958807286,
+          40.795169816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 35,
+        "ele": 19.203
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958871679,
+          40.795128319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 36,
+        "ele": 18.943
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958937381,
+          40.795067014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 37,
+        "ele": 18.948
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958986602,
+          40.795021209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 38,
+        "ele": 18.943
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959058304,
+          40.794948147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 39,
+        "ele": 18.592
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959089342,
+          40.794869321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 40,
+        "ele": 17.328
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959137266,
+          40.79475703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 41,
+        "ele": 16.482
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95920418599999,
+          40.794676294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 42,
+        "ele": 15.592
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95925146899999,
+          40.79458258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 43,
+        "ele": 16.69
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959293046,
+          40.794500172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 44,
+        "ele": 17.74
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959366423,
+          40.794406762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 45,
+        "ele": 18.692
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95947037,
+          40.794304756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 46,
+        "ele": 19.386
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959610979,
+          40.794199448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 47,
+        "ele": 19.776
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959696457,
+          40.794151362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 48,
+        "ele": 20.236
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959807565,
+          40.794104397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 49,
+        "ele": 20.342
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.959910855,
+          40.794096795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 50,
+        "ele": 21.147
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960052653,
+          40.794049798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 51,
+        "ele": 21.915
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960226442,
+          40.793965365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 52,
+        "ele": 22.147
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960363122,
+          40.79391919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 53,
+        "ele": 22.059
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96048146699999,
+          40.793922785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 54,
+        "ele": 22.305
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960686644,
+          40.793829948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 55,
+        "ele": 22.661
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960792047,
+          40.793794014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 56,
+        "ele": 23.187
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.960913688,
+          40.793743098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_fid": 0,
+        "track_seg_id": 0,
+        "track_seg_point_id": 57,
+        "ele": 23.501
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.961015226,
+          40.793680027
+        ]
+      }
+    }
+  ]
+}

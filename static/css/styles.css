@@ -9,6 +9,10 @@ h1 {
 }
 
 #video {
-  width: 70%;
+  width: 100%;
   margin: 10px;
+}
+
+input {
+  width: 3rem;
 }

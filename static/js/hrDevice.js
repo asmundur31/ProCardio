@@ -5,8 +5,13 @@ It follows bluetooth heart rate protocol, therefore works with any HR device.
 > Documentation:
 https://www.bluetooth.com/specifications/specs/heart-rate-profile-1-0/
 */
+import { updateVideoSpeedByHR } from './video.js';
+import { 
+  updateDataHR,
+  updateDisconnectedHR,
+  updateConnectedHR } from './userInterface.js';
 
-class HeartRateDevice {
+export default class HeartRateDevice {
   constructor() {
     this.device = null;
     this.server = null;
@@ -121,4 +126,3 @@ class HeartRateDevice {
     return this.device.name;
   }
 }
-

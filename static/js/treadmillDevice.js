@@ -8,8 +8,14 @@ https://www.bluetooth.com/specifications/specs/fitness-machine-service-1-0/
 > Other references:
 Treadmill rpi: https://github.com/gustimorth/Treadmill2.0App/
 */
+import { updateVideoSpeedByTreadmillSpeed } from './video.js';
+import {
+  updateDisconnectedTreadmill,
+  updateConnectedTreadmill,
+  updateDataTreadmill
+} from './userInterface.js';
 
-class TreadmillDevice {
+export default class TreadmillDevice {
 
   constructor() {
     this.device = null;
@@ -50,8 +56,8 @@ class TreadmillDevice {
     var service = await server.getPrimaryService(this.serviceUUID);
     
     return Promise.all([
-      this.findControlCharacteristic(service),
       this.findDataCharacteristic(service),
+      this.findControlCharacteristic(service),
     ]);
   }
 
@@ -61,7 +67,6 @@ class TreadmillDevice {
     var characteristic = await characteristics.startNotifications();
     characteristic.addEventListener('characteristicvaluechanged', this.parseTreadmillData);
     console.log(`> request sent to ${this.device.name} start notifications ${characteristic.uuid}`);
-    updateConnectedTreadmill();
   }
 
   async findControlCharacteristic(service) {
@@ -70,6 +75,7 @@ class TreadmillDevice {
     const val = Uint8Array.of(0);
     characteristic.writeValue(val);
     console.log(`> request sent to ${this.device.name} control device ${characteristic.uuid}`);
+    updateConnectedTreadmill();
   }
 
   onDisconnected(event) {
@@ -228,7 +234,7 @@ class TreadmillDevice {
     let index_inclination = 9;
     result.inclination = Number(value.getInt16(index_inclination, /*littleEndian=*/true) / 10).toFixed(1);
     let index_distance = 6;
-    result.distance = ((value.getUint16(index_distance, true))>>2) + value.getUint8(2 + index_distance, true);
+    result.distance = ((value.getUint16(index_distance, true))) + value.getUint8(2 + index_distance, true);
     let index_time = 14;
     let seconds = value.getUint16(index_time, /*littleEndian=*/true);
     result.duration = seconds * 1000;
