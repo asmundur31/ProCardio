@@ -161,7 +161,6 @@ export function updateConnectedTreadmill() {
 export function updateDataTreadmill(measurementType, treadmillMeasurement) {
   updateTreadmillSpeedText(treadmillMeasurement.speed);
   updateTreadmillInclineText(treadmillMeasurement.inclination);
-  updateTreadmillDistanceText(treadmillMeasurement.distance);
   if (treadmillMeasurements[measurementType] == undefined) {
     treadmillMeasurements[measurementType] = [];
   }
