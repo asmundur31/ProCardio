@@ -1,3 +1,6 @@
+/**
+ * This module has the routing for tests
+ */
 import express from 'express';
 
 export const router = express.Router();
