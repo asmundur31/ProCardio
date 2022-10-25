@@ -26,9 +26,6 @@ app.get('/home', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about');
 });
-app.get('/old', (req, res) => {
-  res.render('index');
-});
 app.use('/routes', routesRouter);
 app.use('/tests', testsRouter);
 

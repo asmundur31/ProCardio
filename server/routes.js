@@ -1,3 +1,6 @@
+/**
+ * This module has the routing for routes
+ */
 import express from 'express';
 import { getAllRoutes, getRoute } from './fetchDataServer.js';
 

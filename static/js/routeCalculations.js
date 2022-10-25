@@ -46,21 +46,6 @@ export async function stopRouteInterval() {
 }
 
 /**
- * Function that performs all the calculations on the route that
- * we need.
- * It takes in the name of the file we want to access.
- */
-export default async function routeCalculations(filename) {
-  const file = await fetch('./static/routes/'+filename+'.geojson');
-  const jsonData = await file.json();
-  // Get coordinates and elevation lists
-  const { coordinates, elevationList } = await formatRouteData(jsonData);
-  // Perform calculations on data
-  const { totDist, inclineList } = calcData(coordinates, elevationList);
-  return {totDist, elevationList, inclineList}
-}
-
-/**
  * Function that returns the video speed unit for the video
  */
 export function getVideoSpeedUnit() {
@@ -97,10 +82,6 @@ function calcData(coordinates, elevation) {
     totDist.push(totDist[totDist.length-1]+distance);
     const nextElevation = elevation[i];
     const incl = calcIncline(previousElevation, nextElevation, distance);
-    /*console.log('previous elevation: '+previousElevation);
-    console.log('Next elevation: '+nextElevation);
-    console.log('Distace: '+distance);
-    console.log('incl: '+incl);*/
     inclineList.push(incl);
     previousPoint = nextPoint;
     previousElevation = nextElevation;
