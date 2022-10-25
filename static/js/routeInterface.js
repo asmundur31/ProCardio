@@ -43,6 +43,7 @@ var inclineText = document.getElementById('incline_text');
 startRouteButton.addEventListener('click', async () => {
   // Go to fullscreen
   videoContainer.classList.add('fullscreen');
+  $('html,body').scrollTop(0);
   var routeId = window.location.pathname;
   routeId = parseInt(routeId[routeId.length-1]);
   await startTreadmill();
@@ -66,7 +67,7 @@ videoElement.addEventListener('ended', () => {
   setTreadmillIncline(0);
   // Cooldown
   cooldownCountdownOverlay.classList.remove('d-none');
-  var timeleft = 10;
+  var timeleft = 60; // 60 second cooldown
   var countdownInterval = setInterval(async () => {
     if(timeleft <= 0){
       await stopTreadmill();
