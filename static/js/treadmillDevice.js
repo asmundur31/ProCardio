@@ -8,12 +8,12 @@ https://www.bluetooth.com/specifications/specs/fitness-machine-service-1-0/
 > Other references:
 Treadmill rpi: https://github.com/gustimorth/Treadmill2.0App/
 */
-import { updateVideoSpeedByTreadmillSpeed } from './video.js';
 import {
   updateDisconnectedTreadmill,
   updateConnectedTreadmill,
-  updateDataTreadmill
-} from './userInterface.js';
+  updateDataTreadmill,
+  updateVideoSpeedByTreadmillSpeed
+} from './connectBluetooth.js';
 
 export default class TreadmillDevice {
 
@@ -223,7 +223,7 @@ export default class TreadmillDevice {
       });
   }
 
-  /* FUNCTIONS TO READ RESPONSES FROM DATA CHARACTERISTIC*/
+  /* FUNCTIONS TO READ RESPONSES FROM DATA CHARACTERISTIC */
 
   parseTreadmillData(event) {
     let value = event.target.value;

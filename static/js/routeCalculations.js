@@ -1,3 +1,50 @@
+import { getRoute, getData } from './dataFetch.js';
+import { 
+  getVideoCurrentTime,
+  getVideoTotalTime,
+  updateInterfaceByVideoProgress } from './routeInterface.js';
+import { setTreadmillIncline } from './connectBluetooth.js';
+
+var videoInterval = {};
+var totalDistance = {};
+var incline = {};
+var elevation = {};
+var videoSpeedUnit = 1; // average speed in km/h that eaquals video speed 1x
+
+/**
+ * Function that starts a interval for the route data
+ */
+export async function startRouteInterval(routeId) {
+  var routeData = await getRoute(routeId);
+  var routeFile = await getData(routeData.route);
+  // Get coordinates and elevation lists
+  const { coordinates, elevationList } = await formatRouteData(routeFile);
+  // Perform calculations on data
+  const { totDist, inclineList } = calcData(coordinates, elevationList);
+  // Save calculations in global lists
+  elevation = elevationList;
+  totalDistance = totDist;
+  incline = inclineList;
+  videoSpeedUnit = (totDist[totDist.length-1]/getVideoTotalTime())*3.6;
+  // Start interval
+  videoInterval = window.setInterval(function() {
+    // 1. Route calculations
+    var newData = calcNewData();
+    // 2. Request incline change
+    setTreadmillIncline(newData.incline);
+    // 3. Update interface
+    updateInterfaceByVideoProgress(newData);
+    //updateDataByVideoProgress(routeData);
+  }, 1000);
+}
+
+/**
+ * Function that stops the interval for the route data
+ */
+export async function stopRouteInterval() {
+  clearInterval(videoInterval);
+}
+
 /**
  * Function that performs all the calculations on the route that
  * we need.
@@ -5,30 +52,33 @@
  */
 export default async function routeCalculations(filename) {
   const file = await fetch('./static/routes/'+filename+'.geojson');
+  const jsonData = await file.json();
   // Get coordinates and elevation lists
-  const { coordinates, elevation } = await formatRouteData(file);
+  const { coordinates, elevationList } = await formatRouteData(jsonData);
   // Perform calculations on data
-  const { totDist, incline } = calcData(coordinates, elevation);
-  return {totDist, elevation, incline}
+  const { totDist, inclineList } = calcData(coordinates, elevationList);
+  return {totDist, elevationList, inclineList}
+}
+
+/**
+ * Function that returns the video speed unit for the video
+ */
+export function getVideoSpeedUnit() {
+  return videoSpeedUnit;
 }
 
 /**
  * Function that gets json file and returns the data we need
  */
-async function formatRouteData(file) {
-  const jsonData = await file.json();
+async function formatRouteData(jsonData) {
   const { features } = jsonData;
   var coordinates = [];
-  var elevation = [];
+  var elevationList = [];
   features.forEach((feature) => {
     coordinates.push(feature.geometry.coordinates)
-    elevation.push(feature.properties.ele);
+    elevationList.push(feature.properties.ele);
   });
-  var incline = [0];
-  for(var i=1; i<elevation.length; i++) {
-    incline.push(calcIncline(elevation[i-1], elevation[i]));
-  }
-  return {coordinates, elevation, incline};
+  return {coordinates, elevationList};
 }
 
 /**
@@ -38,7 +88,7 @@ async function formatRouteData(file) {
  */
 function calcData(coordinates, elevation) {
   var totDist = [0];
-  var incline = [0];
+  var inclineList = [0];
   var previousPoint = coordinates[0];
   var previousElevation = elevation[0];
   for(var i=1; i<coordinates.length; i++) {
@@ -51,11 +101,11 @@ function calcData(coordinates, elevation) {
     console.log('Next elevation: '+nextElevation);
     console.log('Distace: '+distance);
     console.log('incl: '+incl);*/
-    incline.push(incl);
+    inclineList.push(incl);
     previousPoint = nextPoint;
     previousElevation = nextElevation;
   }
-  return {totDist, incline};
+  return {totDist, inclineList};
 }
 
 /**
@@ -83,4 +133,34 @@ function pointDist(pointA, pointB) {
 function calcIncline(elevationA, elevationB, distance) {
   const inclinePer = ((elevationB-elevationA)/distance)*100;
   return inclinePer;
+}
+
+/**
+ * Function that calculates new incline for the treadmill
+ */
+function calcNewData() {
+  // First we find progress of video
+  var currentTime = getVideoCurrentTime();
+  var totalTime = getVideoTotalTime();
+  var progress = currentTime/totalTime;
+  // Then we assume video speed is constant and find the current distance
+  var totDistance = totalDistance[totalDistance.length-1];
+  var currentDistance = totDistance*progress;
+  // We find the index where we are
+  var index = 0;
+  while(totalDistance[index]<currentDistance) {
+    index++;
+  }
+  // Then from the index we get the real elevation
+  var alfa = (currentDistance-totalDistance[index-1])/(totalDistance[index]-totalDistance[index-1]);
+  var ele = elevation[index]*alfa + elevation[index-1]*(1-alfa);
+  // Calculate the incline and elevation
+  var newIncline = incline[index];
+  var newElevation = ele;
+  return {
+    'incline': newIncline,
+    'elevation': newElevation,
+    'totalDistance': totDistance,
+    'currentDistance': currentDistance
+  };
 }
