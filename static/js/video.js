@@ -120,9 +120,9 @@ export function updateDataByVideoProgress(routeData) {
   }
   // Then from the index we get the real elevation
   var alfa = (currentDistance-routeData.totDist[index-1])/(routeData.totDist[index]-routeData.totDist[index-1]);
-  var ele = routeData.elevation[index]*alfa + routeData.elevation[index-1]*(1-alfa);
+  var ele = routeData.elevationList[index]*alfa + routeData.elevationList[index-1]*(1-alfa);
   // Calculate the incline
-  var currentIncline = routeData.incline[index];
+  var currentIncline = routeData.inclineList[index];
   // We request the treadmill to change its incline
   setTreadmillIncline(currentIncline);
   // Finally we update the text with correct values

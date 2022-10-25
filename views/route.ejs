@@ -1,0 +1,111 @@
+<%- include(root + '/views/header') -%>
+<main>
+  <div class="route">
+    <!-- Here comes the route -->
+    <h1 class="route_header"><%= route.name %></h1>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center video_container">
+          <video id="video">
+            <source src="<%= route.video %>" type="video/mp4">
+          </video>
+          <div class="video_overlay_controls d-none">
+            <div class="col-12 text-center" id="route_controls">
+              <button type="button" class="btn btn-secondary" id="start_route_button">
+                Start
+              </button>
+              <button type="button" class="btn btn-secondary" id="pause_route_button">
+                Pause
+              </button>
+              <button type="button" class="btn btn-secondary" id="fullscreen_button">
+                Fullscreen
+              </button>
+            </div>
+          </div>
+          <div class="video_overlay_data">
+            <div class="col d-flex flex-column p-2">
+              <h3>Data</h3>
+              <div>
+                <label for="video_speed_text">Video speed:
+                </label>
+                <span id="video_speed_text">1x</span>
+              </div>
+              <div>
+                <label for="treadmill_speed_text">Treadmill speed:</label>
+                <span id="treadmill_speed_text">0 km/h</span>
+              </div>
+              <div>
+                <label for="treadmill_incline_text">Treadmill incline:</label>
+                <span id="treadmill_incline_text">0 %</span>
+              </div>
+              <div>
+                <label for="treadmill_total_distance_text">Total distance:</label>
+                <span id="treadmill_total_distance_text">0 m</span>
+              </div>
+              <div>
+                <label for="treadmill_distance_text">Distance:</label>
+                <span id="treadmill_distance_text">0 m</span>
+              </div>
+              <div>
+                <label for="hr_text">HR:</label>
+                <span id="hr_text">0 bpm</span>
+              </div>
+              <div>
+                <label for="elevation_text">Elevation:</label>
+                <span id="elevation_text">0 m</span>
+              </div>
+              <div>
+                <label for="incline_text">Incline:</label>
+                <span id="incline_text">0 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="video_overlay_countdown d-none">
+            <div id="countdown">
+              <h4>Cooldown</h4>
+              <p id="countdown_text">10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h5>Connect to treadmill:</h5>
+      <button type="button" class="btn btn-secondary" id="connect_treadmill_button">
+        Connect Treadmill
+      </button>
+      <button type="button" class="btn btn-secondary d-none" id="disconnect_treadmill_button">
+        Disconnect Treadmill
+      </button>
+    </div>
+    <div class="col-12">
+      <h5>Connect other sensors:</h5>
+      <button type="button" class="btn btn-secondary" id="connect_hr_button">
+        Connect HR
+      </button>
+      <button type="button" class="btn btn-secondary d-none" id="disconnect_hr_button">
+        Disconnect HR
+      </button>
+    </div>
+  </div>
+  <a href="/routes" class="btn btn-secondary mt-5">Back</a>
+</main>
+
+<!-- Toast message -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i id="toast_status" class="fa-solid fa-circle-check text-success"></i>
+      <strong id="toast_title" class="me-auto text-success">Bootstrap</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div id="toast_message" class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+<!-- Include all scripts needed -->
+<script type="module" src="<% root %>/static/js/connectBluetooth.js"></script>
+<%- include(root + '/views/footer') -%>

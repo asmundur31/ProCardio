@@ -1,0 +1,23 @@
+<%- include(root + '/views/header' ) -%>
+  <main>
+    <div class="routes">
+      <!-- Here comes the available routes -->
+      <div class="row">
+        <% for(var i=0; i<routes.length; i++) { %>
+        <div class="col-4">
+          <a class="card_href" href="/routes/<%= routes[i].id %>">
+            <div class="card">
+              <img class="card_img" src="<%= routes[i].thumbnail %>">
+              <h3 class="card_title"><%= routes[i].name %></h3>
+              <p class="card_text"><%= routes[i].description %></p>
+            </div>
+          </a>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <a href="/home" class="btn btn-secondary mt-5">Back</a>
+  </main>
+
+  <%- include(root + '/views/footer' ) -%>
+  
