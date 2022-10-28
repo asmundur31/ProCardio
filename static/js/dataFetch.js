@@ -6,7 +6,7 @@
  * Function that gets all the routes that we have collected
  */
 export async function getAllRoutes() {
-  var data = getData('/static/routes/allRoutes.json');
+  var data = await getData('/static/routes/allRoutes.json');
   return data.routes;
 }
 
@@ -14,7 +14,7 @@ export async function getAllRoutes() {
  * Function that gets all the routes that we have collected
  */
 export async function getRouteById(id) {
-  var data = getData('/static/routes/allRoutes.json');
+  var data = await getData('/static/routes/allRoutes.json');
   var route = filterById(data.routes, id);
   return route;
 }

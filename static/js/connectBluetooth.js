@@ -49,7 +49,7 @@ async function connectTreadmill() {
     // Update interface after treadmill connected
     updateInterfaceTreadmillConnected();
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }
 
@@ -63,7 +63,7 @@ async function connectHR() {
     await heartRateDevice.connect();
     updateInterfaceHRConnected();
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }
 
@@ -152,7 +152,7 @@ export async function startTreadmill() {
   try {
     await treadmillDevice.changeTreadmillStatus('start');
   } catch (e) {
-    console.log(e);
+    console.error(e);
   }
 }
 
@@ -163,7 +163,7 @@ export async function startTreadmill() {
   try {
     await treadmillDevice.changeTreadmillStatus('stop');
   } catch (e) {
-    console.log(e);
+    console.error(e);
   }
 }
 
