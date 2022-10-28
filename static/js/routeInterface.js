@@ -10,7 +10,8 @@ import {
   startTreadmill,
   stopTreadmill,
   setTreadmillSpeed,
-  setTreadmillIncline
+  setTreadmillIncline,
+  getMeasurementsData
 } from './connectBluetooth.js';
 
 // Elements
@@ -22,6 +23,7 @@ var disconnectHRButton = document.getElementById('disconnect_hr_button');
 var routeControlsOverlay = document.getElementsByClassName('video_overlay_controls')[0];
 var startRouteButton = document.getElementById('start_route_button');
 var pauseRouteButton = document.getElementById('pause_route_button');
+var endRouteButton = document.getElementById('end_route_button');
 var fullscreenButton = document.getElementById('fullscreen_button');
 
 var cooldownCountdownOverlay = document.getElementsByClassName('video_overlay_countdown')[0];
@@ -41,21 +43,30 @@ var inclineText = document.getElementById('incline_text');
 
 // Listeners
 startRouteButton.addEventListener('click', async () => {
-  // Go to fullscreen
+  // Go to fullscreen and make sure we are at the top
   videoContainer.classList.add('fullscreen');
   $('html,body').scrollTop(0);
+  // Get the id of the route from the pathname
   var routeId = window.location.pathname;
   routeId = parseInt(routeId[routeId.length-1]);
   await startTreadmill();
   await startRouteInterval(routeId);
   videoElement.play();
-  setTreadmillSpeed(3);
+  setTimeout(setTreadmillSpeed(3), 1000);
 });
 
 pauseRouteButton.addEventListener('click', async () => {
   videoElement.pause();
+});
+
+endRouteButton.addEventListener('click', async () => {
+  videoElement.pause();
   await stopTreadmill();
   stopRouteInterval();
+  videoElement.currentTime = 0;
+  videoContainer.classList.remove('fullscreen');
+  
+  getMeasurementsData();
 });
 
 fullscreenButton.addEventListener('click', () => {
@@ -75,6 +86,7 @@ videoElement.addEventListener('ended', () => {
       cooldownCountdownOverlay.classList.add('d-none');
       videoContainer.classList.remove('fullscreen');
       clearInterval(countdownInterval);
+      videoElement.currentTime = 0;
     }
     cooldownCountdownText.innerHTML = timeleft;
     timeleft -= 1;

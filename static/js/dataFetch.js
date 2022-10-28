@@ -6,17 +6,15 @@
  * Function that gets all the routes that we have collected
  */
 export async function getAllRoutes() {
-  var file = await fetch('http://localhost:3000/static/data.json');
-  var data = await file.json();
+  var data = getData('/static/routes/allRoutes.json');
   return data.routes;
 }
 
 /**
  * Function that gets all the routes that we have collected
  */
-export async function getRoute(id) {
-  var file = await fetch('http://localhost:3000/static/data.json');
-  var data = await file.json();
+export async function getRouteById(id) {
+  var data = getData('/static/routes/allRoutes.json');
   var route = filterById(data.routes, id);
   return route;
 }
@@ -35,7 +33,7 @@ function filterById(jsonList, id) {
  * Function that gets data by specific url 
  */
 export async function getData(url) {
-  var file = await fetch('http://localhost:3000'+url);
+  var file = await fetch(`${window.location.origin}${url}`);
   var data = await file.json();
   return data;
 }

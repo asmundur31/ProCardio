@@ -1,4 +1,4 @@
-import { getRoute, getData } from './dataFetch.js';
+import { getRouteById, getData } from './dataFetch.js';
 import { 
   getVideoCurrentTime,
   getVideoTotalTime,
@@ -15,10 +15,10 @@ var videoSpeedUnit = 1; // average speed in km/h that eaquals video speed 1x
  * Function that starts a interval for the route data
  */
 export async function startRouteInterval(routeId) {
-  var routeData = await getRoute(routeId);
-  var routeFile = await getData(routeData.route);
+  var routeData = await getRouteById(routeId);
+  var routeJson = await getData(routeData.route);
   // Get coordinates and elevation lists
-  const { coordinates, elevationList } = await formatRouteData(routeFile);
+  const { coordinates, elevationList } = await formatRouteData(routeJson);
   // Perform calculations on data
   const { totDist, inclineList } = calcData(coordinates, elevationList);
   // Save calculations in global lists

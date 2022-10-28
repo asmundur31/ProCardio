@@ -19,9 +19,15 @@ import { getVideoSpeedUnit } from './routeCalculations.js';
 let treadmillDevice = new TreadmillDevice();
 let heartRateDevice = new HeartRateDevice();
 
+// Variables for recording data
+var recordInterval;
+var recordIntervalTime = 500;
+var isRecording = false;
+
 // Measurments
 var treadmillMeasurements = {};
 var heartRateMeasurements = {};
+var routeData = {};
 
 // Elements
 var connectTreadmillButton = document.getElementById('connect_treadmill_button');
@@ -39,7 +45,7 @@ disconnectHRButton.addEventListener('click', disconnectHR);
 async function connectTreadmill() {
   try {
     // Connect to treadmill
-    await treadmillDevice.connect();
+    //await treadmillDevice.connect();
     // Update interface after treadmill connected
     updateInterfaceTreadmillConnected();
   } catch (error) {
@@ -169,4 +175,31 @@ export async function startTreadmill() {
   var videoSpeedUnit = getVideoSpeedUnit();
   var newVideoSpeed = treadmillSpeed/videoSpeedUnit;
   updateInterfaceVideoSpeed(newVideoSpeed);
+}
+/*
+// Loop functions to record data
+function startRecordLoop() {
+  if(!recordInterval) {
+    recordInterval = setInterval(updateRecording, recordIntervalTime);
+  }
+}
+function stopRecordLoop() {
+  clearInterval(recordInterval);
+  recordInterval = null;
+}
+
+function updateRecording() {
+  // Check if at least one device is connected
+  if(treadmillDevice.device === null && heartRateDevice.device === null) {
+    stopRecordLoop();
+    return;
+  }
+  //
+}
+*/
+
+// Get mesurement data
+export function getMeasurementsData() {
+  console.log(treadmillMeasurements);
+  console.log(heartRateMeasurements);
 }

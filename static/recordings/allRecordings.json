@@ -1,0 +1,8 @@
+{
+  "recordings": [
+    {
+      "id": 0,
+      "recording": "/static/recordings/testRecording.json"
+    }
+  ]
+}

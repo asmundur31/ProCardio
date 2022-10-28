@@ -1,0 +1,64 @@
+{
+  "experiment": {
+      "fileName": "testRecording",
+      "name": "Park Run",
+      "type": "route",
+      "duration": "00:06:07",
+      "startTime": "2022/10/25 10:13:56",
+      "endTime": "2022/10/25 10:20:03",
+      "devices": {
+          "treadmill": "treadmill Monark",
+          "hr": "Polar Sense"
+      }
+  },
+  "treadmill": {
+    "device": "treadmill Monark",
+    "measurements": [
+      {
+        "time": 178392749295,
+        "speed": "12.2",
+        "incline": "4.5"
+      },
+      {
+        "time": 178392753748,
+        "speed": "12.1",
+        "incline": "4.0"
+      }
+    ]
+  },
+  "hr": {
+      "device": "PM5 431380137",
+      "measurements": [
+        {
+          "time": 178392749295,
+          "heartRate": "89"
+        },
+        {
+          "time": 178392753748,
+          "heartRate": "91"
+        }
+      ]
+  },
+  "routeData": {
+    "elevation": [
+      {
+        "time": 178392749295,
+        "elevation": "27.3"
+      },
+      {
+        "time": 178392753748,
+        "elevation": "29.0"
+      }
+    ],
+    "incline": [
+      {
+        "time": 178392749295,
+        "incline": "4.5"
+      },
+      {
+        "time": 178392753748,
+        "elevation": "4.0"
+      }
+    ]
+  }
+}
