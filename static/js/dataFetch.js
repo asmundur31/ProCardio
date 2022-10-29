@@ -6,18 +6,21 @@
  * Function that gets all the routes that we have collected
  */
 export async function getAllRoutes() {
-  var file = await fetch('http://localhost:3000/static/data.json');
-  var data = await file.json();
+  var data = await getData('/static/routes/allRoutes.json');
   return data.routes;
 }
 
 /**
  * Function that gets all the routes that we have collected
  */
-export async function getRoute(id) {
-  var file = await fetch('http://localhost:3000/static/data.json');
-  var data = await file.json();
-  var route = filterById(data.routes, id);
+export async function getRouteById(id) {
+  var data = await getData('/static/routes/allRoutes.json');
+  var routeData = filterById(data.routes, id);
+  var routeName = routeData.name;
+  var routeType = 'route';
+  const route = await getData(routeData.route);
+  route.name = routeName;
+  route.type = routeType;
   return route;
 }
 
@@ -34,8 +37,29 @@ function filterById(jsonList, id) {
 /**
  * Function that gets data by specific url 
  */
-export async function getData(url) {
-  var file = await fetch('http://localhost:3000'+url);
+async function getData(url) {
+  var file = await fetch(`${window.location.origin}${url}`);
   var data = await file.json();
   return data;
+}
+
+/**
+ * Function that posts data to specific url 
+ */
+async function postData(url, jsonObj) {
+  await fetch(`${window.location.origin}${url}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(jsonObj)
+  });
+}
+
+/**
+ * Function that sends a post request with recording to server
+ */
+export async function saveRecording(jsonObj) {
+  var url = '/recordings';
+  await postData(url, jsonObj);
 }

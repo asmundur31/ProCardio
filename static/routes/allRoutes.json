@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "id": 0,
+      "name": "Park Run",
+      "route": "/static/routes/ParkRun.geojson",
+      "video": "https://res.cloudinary.com/dwqpirk6g/video/upload/v1666974731/Treadmill/ParkRunSmall_wdbj1f.mp4",
+      "thumbnail": "https://res.cloudinary.com/dwqpirk6g/image/upload/v1666974741/Treadmill/ParkRun_qnmwvr.png",
+      "description": "Very nice and cosy run in Central Park."
+    },
+    {
+      "id": 1,
+      "name": "Park Run 2",
+      "route": "/static/routes/ParkRun2.geojson",
+      "video": "https://res.cloudinary.com/dwqpirk6g/video/upload/v1666974689/Treadmill/ParkRun2Small_lf98bh.mp4",
+      "thumbnail": "https://res.cloudinary.com/dwqpirk6g/image/upload/v1666974744/Treadmill/ParkRun2_b25ocx.png",
+      "description": "Wonderful run in the most runned park in the world, Central Park."
+    }
+  ],
+  "tests": []
+}

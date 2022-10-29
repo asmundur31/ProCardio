@@ -117,7 +117,7 @@ export default class TreadmillDevice {
       console.log('val', val);
       characteristic.writeValue(val);
     } catch(e) {
-      console.log(e);
+      console.error(e);
     }
   }
 
@@ -130,7 +130,7 @@ export default class TreadmillDevice {
       console.log('val', val);
       characteristic.writeValue(val);
     } catch(e) {
-      console.log(e);
+      console.error(e);
     }
   }
 
@@ -198,7 +198,7 @@ export default class TreadmillDevice {
         characteristic.writeValue(val);
       })
       .catch(error => {
-        console.log(error);
+        console.error(error);
       });
   }
 
@@ -219,7 +219,7 @@ export default class TreadmillDevice {
         characteristic.writeValue(val);
       })
       .catch(error => {
-        console.log(error);
+        console.error(error);
       });
   }
 
