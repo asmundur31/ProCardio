@@ -1,2 +1,4 @@
 *
 !.gitignore
+!allRecordings.json
+!testRecording.json
