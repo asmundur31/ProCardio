@@ -11,7 +11,9 @@ import {
   stopTreadmill,
   setTreadmillSpeed,
   setTreadmillIncline,
-  getMeasurementsData
+  startRecording,
+  endRecording,
+  setRouteData
 } from './connectBluetooth.js';
 
 // Elements
@@ -49,10 +51,11 @@ startRouteButton.addEventListener('click', async () => {
   // Get the id of the route from the pathname
   var routeId = window.location.pathname;
   routeId = parseInt(routeId[routeId.length-1]);
-  await startTreadmill();
+  //await startTreadmill();
+  //setTimeout(setTreadmillSpeed(3), 1000);
+  startRecording();
   await startRouteInterval(routeId);
   videoElement.play();
-  setTimeout(setTreadmillSpeed(3), 1000);
 });
 
 pauseRouteButton.addEventListener('click', async () => {
@@ -60,37 +63,19 @@ pauseRouteButton.addEventListener('click', async () => {
 });
 
 endRouteButton.addEventListener('click', async () => {
-  videoElement.pause();
-  await stopTreadmill();
   stopRouteInterval();
-  videoElement.currentTime = 0;
-  videoContainer.classList.remove('fullscreen');
-  
-  getMeasurementsData();
+  await startCooldown(10);
+  await endRecording();
 });
 
 fullscreenButton.addEventListener('click', () => {
   videoContainer.classList.toggle('fullscreen');
 });
 
-videoElement.addEventListener('ended', () => {
-  setTreadmillSpeed(3);
-  setTreadmillIncline(0);
-  // Cooldown
-  cooldownCountdownOverlay.classList.remove('d-none');
-  var timeleft = 60; // 60 second cooldown
-  var countdownInterval = setInterval(async () => {
-    if(timeleft <= 0){
-      await stopTreadmill();
-      stopRouteInterval();
-      cooldownCountdownOverlay.classList.add('d-none');
-      videoContainer.classList.remove('fullscreen');
-      clearInterval(countdownInterval);
-      videoElement.currentTime = 0;
-    }
-    cooldownCountdownText.innerHTML = timeleft;
-    timeleft -= 1;
-  }, 1000);
+videoElement.addEventListener('ended', async () => {
+  stopRouteInterval();
+  await startCooldown(60);
+  await endRecording();
 });
 
 /**
@@ -164,6 +149,7 @@ export function updateInterfaceByVideoProgress(data) {
   inclineText.innerHTML = data.incline.toFixed(1) + ' %';
   treadmillTotalDistanceText.innerHTML = data.totalDistance.toFixed(0) + ' m';
   treadmillDistanceText.innerHTML = data.currentDistance.toFixed(0) + ' m';
+  setRouteData(data);
 }
 
 /**
@@ -191,4 +177,29 @@ export function getVideoCurrentTime() {
  */
  export function getVideoTotalTime() {
   return videoElement.duration;
+}
+
+/**
+ * Function that displays the cooldown for sec seconds
+ */
+async function startCooldown(sec) {
+  //setTreadmillSpeed(3);
+  //setTreadmillIncline(0);
+  videoElement.pause();
+  // Cooldown
+  cooldownCountdownOverlay.classList.remove('d-none');
+  cooldownCountdownText.innerHTML = sec;
+  var timeleft = sec; // second cooldown
+  var countdownInterval = setInterval(async () => {
+    if(timeleft <= 0) {
+      //await stopTreadmill();
+      await stopRouteInterval();
+      cooldownCountdownOverlay.classList.add('d-none');
+      videoContainer.classList.remove('fullscreen');
+      clearInterval(countdownInterval);
+      videoElement.currentTime = 0;
+    }
+    cooldownCountdownText.innerHTML = timeleft;
+    timeleft -= 1;
+  }, 1000);
 }

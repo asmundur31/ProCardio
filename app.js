@@ -17,6 +17,9 @@ const {
 
 const app = express();
 
+// To be able to work with json
+app.use(express.json()) 
+
 // We are using EJS templates that we serve to the client
 app.set('view engine', 'ejs');
 // Static files are loceted in the static folder

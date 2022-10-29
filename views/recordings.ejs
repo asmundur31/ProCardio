@@ -3,13 +3,13 @@
   <div class="recordings">
     <!-- Here comes the available recordings -->
     <div class="row">
-      <% for(var i=0; i<recordings.length; i++) { %>
-      <div class="col-4">
+      <% for(var i=recordings.length-1; i>=0; i--) { %>
+      <div class="col-4 mb-3">
         <a class="card_href" href="/recordings/<%= recordings[i].id %>">
           <div class="card">
-            <h3 class="card_title"><%= recordings[i].experiment.fileName %></h3>
+            <h3 class="card_title"><%= recordings[i].experiment.name %></h3>
             <p class="card_text">Type: <%= recordings[i].experiment.type %></p>
-            <p class="card_text">Name: <%= recordings[i].experiment.name %></p>
+            <p class="card_text">File: <%= recordings[i].experiment.fileName %></p>
             <p class="card_text">Duration: <%= recordings[i].experiment.duration %></p>
             <p class="card_text">Date: <%= recordings[i].experiment.startTime %></p>
           </div>

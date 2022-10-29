@@ -15,7 +15,12 @@ export async function getAllRoutes() {
  */
 export async function getRouteById(id) {
   var data = await getData('/static/routes/allRoutes.json');
-  var route = filterById(data.routes, id);
+  var routeData = filterById(data.routes, id);
+  var routeName = routeData.name;
+  var routeType = 'route';
+  const route = await getData(routeData.route);
+  route.name = routeName;
+  route.type = routeType;
   return route;
 }
 
@@ -32,8 +37,29 @@ function filterById(jsonList, id) {
 /**
  * Function that gets data by specific url 
  */
-export async function getData(url) {
+async function getData(url) {
   var file = await fetch(`${window.location.origin}${url}`);
   var data = await file.json();
   return data;
+}
+
+/**
+ * Function that posts data to specific url 
+ */
+async function postData(url, jsonObj) {
+  await fetch(`${window.location.origin}${url}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(jsonObj)
+  });
+}
+
+/**
+ * Function that sends a post request with recording to server
+ */
+export async function saveRecording(jsonObj) {
+  var url = '/recordings';
+  await postData(url, jsonObj);
 }

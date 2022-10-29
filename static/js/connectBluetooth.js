@@ -1,6 +1,7 @@
 /**
  * This module handles all connections via bluetooth to all devices.
  */
+import { showToast } from './utils.js';
 import TreadmillDevice from './treadmillDevice.js';
 import HeartRateDevice from './hrDevice.js';
 import { 
@@ -14,20 +15,23 @@ import {
   updateInterfaceVideoSpeed
 } from './routeInterface.js';
 import { getVideoSpeedUnit } from './routeCalculations.js';
+import { saveRecording } from './dataFetch.js';
 
 // Devices
 let treadmillDevice = new TreadmillDevice();
 let heartRateDevice = new HeartRateDevice();
 
-// Variables for recording data
-var recordInterval;
-var recordIntervalTime = 500;
-var isRecording = false;
-
 // Measurments
 var treadmillMeasurements = {};
 var heartRateMeasurements = {};
-var routeData = {};
+var routeData = {
+  dataPoints: []
+};
+var recordingName;
+var recordingType;
+var recordingStartTime;
+var recordingEndTime;
+var recordingDuration;
 
 // Elements
 var connectTreadmillButton = document.getElementById('connect_treadmill_button');
@@ -176,30 +180,82 @@ export async function startTreadmill() {
   var newVideoSpeed = treadmillSpeed/videoSpeedUnit;
   updateInterfaceVideoSpeed(newVideoSpeed);
 }
-/*
-// Loop functions to record data
-function startRecordLoop() {
-  if(!recordInterval) {
-    recordInterval = setInterval(updateRecording, recordIntervalTime);
-  }
-}
-function stopRecordLoop() {
-  clearInterval(recordInterval);
-  recordInterval = null;
-}
-
-function updateRecording() {
-  // Check if at least one device is connected
-  if(treadmillDevice.device === null && heartRateDevice.device === null) {
-    stopRecordLoop();
-    return;
-  }
-  //
-}
-*/
 
 // Get mesurement data
-export function getMeasurementsData() {
-  console.log(treadmillMeasurements);
-  console.log(heartRateMeasurements);
+/**
+ * Function that starts the recording
+ */
+export function startRecording() {
+  console.log('Start recording');
+  recordingStartTime = Date.now();
+}
+
+/**
+ * Function that ends the recording and saves the data to a file
+ */
+export async function endRecording() {
+  console.log('End recording');
+  recordingEndTime = Date.now();
+  recordingDuration = recordingEndTime - recordingStartTime;
+
+  // Creating the json file
+  var fileName = `recording_${recordingName.replace(/\s/g, '')}_${recordingType}_${crypto.randomUUID()}`;
+  var experiment = {
+    fileName: fileName,
+    name: recordingName,
+    type: recordingType,
+    duration: recordingDuration,
+    startTime: recordingStartTime,
+    endTime: recordingEndTime,
+    devices: {
+      treadmill: "treadmill Monark"/*treadmillDevice.getDeviceName()*/,
+      hr: "HeartRate Sensor"/*heartRateDevice.getDeviceName()*/
+    }
+  };
+  var treadmill = {
+    device: experiment.devices.treadmill,
+    measurements: treadmillMeasurements
+  };
+  var hr = {
+    device: experiment.devices.hr,
+    measurements: heartRateMeasurements
+  };
+  var recordingJSON = {experiment, treadmill, hr, routeData};
+
+  // Send a post request to save the recording
+  await saveRecording(recordingJSON);
+  showToast('Record data', 'Data has been recorded and saved.', 'success');
+
+  // Reset all variables
+  recordingName = "";
+  recordingType = "";
+  recordingStartTime = null;
+  recordingEndTime = null;
+  recordingDuration = null;
+  treadmillMeasurements = {};
+  heartRateMeasurements = {};
+  routeData = {
+    dataPoints: []
+  };
+}
+
+/**
+ * Function that sets new data to the routeData
+ */
+export function setRouteData(data) {
+  var dataPoint = {
+    timestamp: data.timestamp,
+    incline: data.incline,
+    elevation: data.elevation,
+    currentDistance: data.currentDistance
+  };
+  routeData['dataPoints'].push(dataPoint);
+}
+
+/**
+ * Function that sets the route name and type
+ */
+export function setRouteNameAndType(route) {
+  recordingName = route.name;
+  recordingType = route.type;
 }

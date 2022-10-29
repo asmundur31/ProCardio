@@ -1,63 +1,63 @@
 {
   "experiment": {
-      "fileName": "testRecording",
-      "name": "Park Run",
-      "type": "route",
-      "duration": "00:06:07",
-      "startTime": "2022/10/25 10:13:56",
-      "endTime": "2022/10/25 10:20:03",
-      "devices": {
-          "treadmill": "treadmill Monark",
-          "hr": "Polar Sense"
-      }
+    "fileName": "testRecording",
+    "name": "Park Run",
+    "type": "route",
+    "duration": 3875,
+    "startTime": 1667069052698,
+    "endTime": 1667069062698,
+    "devices": {
+      "treadmill": "treadmill Monark",
+      "hr": "PM5 431380137"
+    }
   },
   "treadmill": {
     "device": "treadmill Monark",
     "measurements": [
       {
-        "time": 178392749295,
+        "time": 1667059399030,
         "speed": "12.2",
         "incline": "4.5"
       },
       {
-        "time": 178392753748,
+        "time": 1667059401032,
         "speed": "12.1",
         "incline": "4.0"
       }
     ]
   },
   "hr": {
-      "device": "PM5 431380137",
-      "measurements": [
-        {
-          "time": 178392749295,
-          "heartRate": "89"
-        },
-        {
-          "time": 178392753748,
-          "heartRate": "91"
-        }
-      ]
+    "device": "PM5 431380137",
+    "measurements": [
+      {
+        "time": 1667059399030,
+        "heartRate": "89"
+      },
+      {
+        "time": 1667059401032,
+        "heartRate": "91"
+      }
+    ]
   },
   "routeData": {
-    "elevation": [
+    "dataPoints": [
       {
-        "time": 178392749295,
-        "elevation": "27.3"
+        "timestamp": 1667059399030,
+        "incline": -0.08258660419546235,
+        "elevation": 32.50114372195433,
+        "currentDistance": 2.2476745033374654
       },
       {
-        "time": 178392753748,
-        "elevation": "29.0"
-      }
-    ],
-    "incline": [
-      {
-        "time": 178392749295,
-        "incline": "4.5"
+        "timestamp": 1667059400030,
+        "incline": -0.08258660419546235,
+        "elevation": 32.499183060978325,
+        "currentDistance": 4.6217410908911
       },
       {
-        "time": 178392753748,
-        "elevation": "4.0"
+        "timestamp": 1667059401032,
+        "incline": -0.08258660419546235,
+        "elevation": 32.49721770176061,
+        "currentDistance": 7.001496545008369
       }
     ]
   }

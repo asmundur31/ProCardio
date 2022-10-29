@@ -1,24 +1,28 @@
-import { getRouteById, getData } from './dataFetch.js';
+import { getRouteById } from './dataFetch.js';
 import { 
   getVideoCurrentTime,
   getVideoTotalTime,
   updateInterfaceByVideoProgress } from './routeInterface.js';
-import { setTreadmillIncline } from './connectBluetooth.js';
+import { 
+  setTreadmillIncline,
+  setRouteNameAndType
+ } from './connectBluetooth.js';
 
 var videoInterval = {};
 var totalDistance = {};
 var incline = {};
 var elevation = {};
 var videoSpeedUnit = 1; // average speed in km/h that eaquals video speed 1x
+var videoIntervalTime = 1000;
 
 /**
  * Function that starts a interval for the route data
  */
 export async function startRouteInterval(routeId) {
-  var routeData = await getRouteById(routeId);
-  var routeJson = await getData(routeData.route);
+  var route = await getRouteById(routeId);
+  setRouteNameAndType(route);
   // Get coordinates and elevation lists
-  const { coordinates, elevationList } = await formatRouteData(routeJson);
+  const { coordinates, elevationList } = await formatRouteData(route);
   // Perform calculations on data
   const { totDist, inclineList } = calcData(coordinates, elevationList);
   // Save calculations in global lists
@@ -31,17 +35,16 @@ export async function startRouteInterval(routeId) {
     // 1. Route calculations
     var newData = calcNewData();
     // 2. Request incline change
-    setTreadmillIncline(newData.incline);
+    //setTreadmillIncline(newData.incline);
     // 3. Update interface
     updateInterfaceByVideoProgress(newData);
-    //updateDataByVideoProgress(routeData);
-  }, 1000);
+  }, videoIntervalTime);
 }
 
 /**
  * Function that stops the interval for the route data
  */
-export async function stopRouteInterval() {
+export function stopRouteInterval() {
   clearInterval(videoInterval);
 }
 
@@ -138,7 +141,9 @@ function calcNewData() {
   // Calculate the incline and elevation
   var newIncline = incline[index];
   var newElevation = ele;
+  var time = Date.now();
   return {
+    'timestamp': time,
     'incline': newIncline,
     'elevation': newElevation,
     'totalDistance': totDistance,

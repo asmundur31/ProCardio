@@ -2,10 +2,10 @@
 <main>
   <div class="recording">
     <div class="row">
-      <h2><%= recording.experiment.fileName %></h2>
+      <h2><%= recording.experiment.name %></h2>
       <div class="col-12">
         <p>Type: <%= recording.experiment.type %></p>
-        <p>Name: <%= recording.experiment.name %></p>
+        <p>File: <%= recording.experiment.fileName %></p>
         <p>Duration: <%= recording.experiment.duration %></p>
         <p>Start: <%= recording.experiment.startTime %></p>
         <p>End: <%= recording.experiment.endTime %></p>
@@ -26,8 +26,18 @@
           </div>
         <% } %>
       </div>
+      <div class="col-6">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="col-6">
+        <canvas id="myChart2"></canvas>
+      </div>
     </div>
   </div>
   <a href="/recordings" class="btn btn-secondary mt-5">Back</a>
 </main>
+
+<!-- Include all scripts needed -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="<% root %>/static/js/charts.js"></script>
 <%- include(root + '/views/footer') -%>
