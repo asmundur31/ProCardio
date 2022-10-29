@@ -35,7 +35,7 @@ export async function startRouteInterval(routeId) {
     // 1. Route calculations
     var newData = calcNewData();
     // 2. Request incline change
-    //setTreadmillIncline(newData.incline);
+    setTreadmillIncline(newData.incline);
     // 3. Update interface
     updateInterfaceByVideoProgress(newData);
   }, videoIntervalTime);

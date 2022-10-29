@@ -49,7 +49,7 @@ disconnectHRButton.addEventListener('click', disconnectHR);
 async function connectTreadmill() {
   try {
     // Connect to treadmill
-    //await treadmillDevice.connect();
+    await treadmillDevice.connect();
     // Update interface after treadmill connected
     updateInterfaceTreadmillConnected();
   } catch (error) {

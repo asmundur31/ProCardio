@@ -51,8 +51,8 @@ startRouteButton.addEventListener('click', async () => {
   // Get the id of the route from the pathname
   var routeId = window.location.pathname;
   routeId = parseInt(routeId[routeId.length-1]);
-  //await startTreadmill();
-  //setTimeout(setTreadmillSpeed(3), 1000);
+  await startTreadmill();
+  setTimeout(setTreadmillSpeed(3), 1000);
   startRecording();
   await startRouteInterval(routeId);
   videoElement.play();
@@ -192,7 +192,7 @@ async function startCooldown(sec) {
   var timeleft = sec; // second cooldown
   var countdownInterval = setInterval(async () => {
     if(timeleft <= 0) {
-      //await stopTreadmill();
+      await stopTreadmill();
       await stopRouteInterval();
       cooldownCountdownOverlay.classList.add('d-none');
       videoContainer.classList.remove('fullscreen');
