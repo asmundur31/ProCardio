@@ -1,8 +1,1 @@
-{
-  "recordings": [
-    {
-      "id": 0,
-      "recording": "/static/recordings/testRecording.json"
-    }
-  ]
-}
+{"recordings":[{"id":0,"recording":"/static/recordings/testRecording.json"},{"id":1,"recording":"/static/recordings/recording_ParkRun2_route_0563bd6b-a97e-4903-a0cb-17d3a4192bb6.json"},{"id":2,"recording":"/static/recordings/recording_ParkRun2_route_3570d078-41fc-4b86-8801-40d7384f7893.json"}]}

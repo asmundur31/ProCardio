@@ -52,9 +52,11 @@ startRouteButton.addEventListener('click', async () => {
   var routeId = window.location.pathname;
   routeId = parseInt(routeId[routeId.length-1]);
   await startTreadmill();
-  setTimeout(setTreadmillSpeed(3), 1000);
+  setTimeout(async () => {
+    setTreadmillSpeed(3);
+    await startRouteInterval(routeId);
+  }, 2000);
   startRecording();
-  await startRouteInterval(routeId);
   videoElement.play();
 });
 
@@ -183,8 +185,8 @@ export function getVideoCurrentTime() {
  * Function that displays the cooldown for sec seconds
  */
 async function startCooldown(sec) {
-  //setTreadmillSpeed(3);
-  //setTreadmillIncline(0);
+  setTreadmillSpeed(3);
+  setTreadmillIncline(0);
   videoElement.pause();
   // Cooldown
   cooldownCountdownOverlay.classList.remove('d-none');

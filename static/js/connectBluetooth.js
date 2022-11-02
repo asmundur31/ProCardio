@@ -177,7 +177,7 @@ export async function startTreadmill() {
  export function updateVideoSpeedByTreadmillSpeed(treadmillMeasurement) {
   var treadmillSpeed = treadmillMeasurement.speed;
   var videoSpeedUnit = getVideoSpeedUnit();
-  var newVideoSpeed = treadmillSpeed/videoSpeedUnit;
+  var newVideoSpeed = treadmillSpeed*1.2/videoSpeedUnit;
   updateInterfaceVideoSpeed(newVideoSpeed);
 }
 
@@ -208,8 +208,8 @@ export async function endRecording() {
     startTime: recordingStartTime,
     endTime: recordingEndTime,
     devices: {
-      treadmill: "treadmill Monark"/*treadmillDevice.getDeviceName()*/,
-      hr: "HeartRate Sensor"/*heartRateDevice.getDeviceName()*/
+      treadmill: treadmillDevice.device ? treadmillDevice.getDeviceName() : "Not connected",
+      hr: heartRateDevice.device ? heartRateDevice.getDeviceName() : "Not connected"
     }
   };
   var treadmill = {
