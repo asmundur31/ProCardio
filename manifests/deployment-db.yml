@@ -1,0 +1,65 @@
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-treadmill-db
+  namespace: treadmill
+spec:
+  capacity:
+    storage: 100Gi
+  nfs:
+    server: 172.31.0.11
+    path: /mnt/cloud1/persistent-storage/development/treadmill/db
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: nfs
+  volumeMode: Filesystem
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-treadmill-db
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  volumeName: pv-treadmill-db
+  storageClassName: nfs
+  volumeMode: Filesystem
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: treadmill-db
+  namespace: treadmill
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: treadmill-db
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: treadmill-db
+    spec:
+      containers:
+        - name: treadmill-db
+          image: postgres:10.1
+          imagePullPolicy: "IfNotPresent"
+          env:
+            - name: POSTGRES_DB
+              value: treadmill
+            - name: POSTGRES_USER
+              value: treadmill
+            - name: POSTGRES_PASSWORD
+              value: treadmill
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: vol-treadmill-db
+      volumes:
+        - name: vol-treadmill-db
+          persistentVolumeClaim:
+            claimName: pvc-treadmill-db

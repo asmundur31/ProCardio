@@ -1,0 +1,17 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: treadmill
+  namespace: treadmill
+  labels:
+    app.kubernetes.io/name: treadmill
+spec:
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+  selector:
+    app.kubernetes.io/name: treadmill
+  type: LoadBalancer

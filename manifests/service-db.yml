@@ -1,0 +1,16 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: treadmill-db
+  namespace: treadmill
+  labels:
+    app.kubernetes.io/name: treadmill-db
+spec:
+  ports:
+    - name: postgres-port
+      protocol: TCP
+      port: 5432
+      targetPort: 5432
+  selector:
+    app.kubernetes.io/name: treadmill-db
