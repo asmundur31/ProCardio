@@ -30,4 +30,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: registry.kthcloud.com/system/landing-api:latest
+          tags: registry.kthcloud.com/treadmill/treadmill:latest
