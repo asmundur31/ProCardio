@@ -59,12 +59,12 @@ export function getVideoSpeedUnit() {
  * Function that gets json file and returns the data we need
  */
 async function formatRouteData(jsonData) {
-  const { features } = jsonData;
+  const { route } = jsonData;
   var coordinates = [];
   var elevationList = [];
-  features.forEach((feature) => {
-    coordinates.push(feature.geometry.coordinates)
-    elevationList.push(feature.properties.ele);
+  route.forEach((dataPoint) => {
+    coordinates.push(dataPoint.geometry.coordinates)
+    elevationList.push(dataPoint.properties.ele);
   });
   return {coordinates, elevationList};
 }

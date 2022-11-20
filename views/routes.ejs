@@ -5,7 +5,7 @@
       <div class="row">
         <% for(var i=0; i<routes.length; i++) { %>
         <div class="col-4">
-          <a class="card_href" href="/routes/<%= routes[i].id %>">
+          <a class="card_href" href="/<%= type %>/<%= routes[i].id %>">
             <div class="card">
               <img class="card_img" src="<%= routes[i].thumbnail %>">
               <h3 class="card_title"><%= routes[i].name %></h3>

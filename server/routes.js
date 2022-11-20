@@ -2,13 +2,13 @@
  * This module has the routing for routes
  */
 import express from 'express';
-import { getAllRoutes, getRouteById } from './fetchDataServer.js';
+import { getRoutes, getRouteById } from './db.js';
 
 export const router = express.Router();
 
 router.get('/', async (req, res) => {
-  var routes = await getAllRoutes();
-  res.render('routes', {'routes': routes});
+  var routes = await getRoutes();
+  res.render('routes', {'routes': routes, 'type': 'routes'});
 });
 
 router.get('/:id', async (req, res) => {

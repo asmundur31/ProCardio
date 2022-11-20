@@ -1,0 +1,164 @@
+{
+  "experiment": {
+    "fileName": "testRecording2",
+    "name": "Park Run 2",
+    "type": "route",
+    "duration": 11690,
+    "startTime": 1667384788750,
+    "endTime": 1667384800440,
+    "devices": {
+      "treadmill": "raspberrypi",
+      "hr": "Not connected"
+    }
+  },
+  "treadmill": {
+    "device": "raspberrypi",
+    "measurements": {
+      "FTMS": [
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 76,
+          "duration": 3944000,
+          "prettyDuration": "01:05:44",
+          "time": 1667384783327,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 76,
+          "duration": 3946000,
+          "prettyDuration": "01:05:46",
+          "time": 1667384785328,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 76,
+          "duration": 3948000,
+          "prettyDuration": "01:05:48",
+          "time": 1667384787319,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 76,
+          "duration": 3950000,
+          "prettyDuration": "01:05:50",
+          "time": 1667384789358,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 76,
+          "duration": 3952000,
+          "prettyDuration": "01:05:52",
+          "time": 1667384791324,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "1.5",
+          "inclination": "0.5",
+          "distance": 76,
+          "duration": 3954000,
+          "prettyDuration": "01:05:54",
+          "time": 1667384793326,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "2.7",
+          "inclination": "1.5",
+          "distance": 77,
+          "duration": 3956000,
+          "prettyDuration": "01:05:56",
+          "time": 1667384795329,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.0",
+          "inclination": "2.5",
+          "distance": 78,
+          "duration": 3958000,
+          "prettyDuration": "01:05:58",
+          "time": 1667384797321,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.0",
+          "inclination": "4.0",
+          "distance": 79,
+          "duration": 3960000,
+          "prettyDuration": "01:06:00",
+          "time": 1667384799324,
+          "measurementType": "FTMS"
+        }
+      ]
+    }
+  },
+  "hr": {
+    "device": "Not connected",
+    "measurements": {}
+  },
+  "routeData": {
+    "dataPoints": [
+      {
+        "timestamp": 1667384791790,
+        "incline": -0.695749472608533,
+        "elevation": 23.50691986633067,
+        "currentDistance": 0.44270729488098387
+      },
+      {
+        "timestamp": 1667384792790,
+        "incline": -0.695749472608533,
+        "elevation": 23.50580332012486,
+        "currentDistance": 0.6031883659803013
+      },
+      {
+        "timestamp": 1667384793790,
+        "incline": -0.695749472608533,
+        "elevation": 23.503773656533312,
+        "currentDistance": 0.8949117048335513
+      },
+      {
+        "timestamp": 1667384794786,
+        "incline": -0.695749472608533,
+        "elevation": 23.500327261014906,
+        "currentDistance": 1.3902617775377961
+      },
+      {
+        "timestamp": 1667384795786,
+        "incline": -0.695749472608533,
+        "elevation": 23.495765524928103,
+        "currentDistance": 2.045919635200346
+      },
+      {
+        "timestamp": 1667384796786,
+        "incline": -0.695749472608533,
+        "elevation": 23.489494986752685,
+        "currentDistance": 2.9471834409641287
+      },
+      {
+        "timestamp": 1667384797787,
+        "incline": -0.695749472608533,
+        "elevation": 23.48299678104684,
+        "currentDistance": 3.8811698774157315
+      },
+      {
+        "timestamp": 1667384798785,
+        "incline": -0.695749472608533,
+        "elevation": 23.476021124931176,
+        "currentDistance": 4.883780212068405
+      },
+      {
+        "timestamp": 1667384799785,
+        "incline": -0.695749472608533,
+        "elevation": 23.469035517808212,
+        "currentDistance": 5.887820803974506
+      }
+    ]
+  }
+}
