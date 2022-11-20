@@ -8,6 +8,7 @@
     "dev": "nodemon app.js",
     "start": "node app.js",
     "setup": "node ./sql/setup.js"
+    "prod": "NODE_ENV=production node app.js"
   },
   "repository": {
     "type": "git",
