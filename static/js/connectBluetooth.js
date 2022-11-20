@@ -223,8 +223,12 @@ export async function endRecording() {
   var recordingJSON = {experiment, treadmill, hr, routeData};
 
   // Send a post request to save the recording
-  await saveRecording(recordingJSON);
-  showToast('Record data', 'Data has been recorded and saved.', 'success');
+  var result = await saveRecording(recordingJSON);
+  if(result.status != 200) {
+    showToast('Record data', 'Recorded data did not save successfully', 'fail');
+  } else {
+    showToast('Record data', 'Data has been recorded and saved.', 'success');
+  }
 
   // Reset all variables
   recordingName = "";
@@ -257,5 +261,5 @@ export function setRouteData(data) {
  */
 export function setRouteNameAndType(route) {
   recordingName = route.name;
-  recordingType = route.type;
+  recordingType = 'route';
 }

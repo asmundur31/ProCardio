@@ -7,13 +7,20 @@ import dotenv from 'dotenv';
 import { router as routesRouter } from './server/routes.js';
 import { router as testsRouter } from './server/tests.js';
 import { router as recordingsRouter } from './server/recordings.js';
+import { router as apiRouter } from './server/api.js';
 
 dotenv.config();
 
 const {
   ORIGIN: origin = 'http://localhost:3000',
-  PORT: port = 3000
+  PORT: port = 3000,
+  DATABASE_URL: databaseUrl
 } = process.env;
+
+if(!databaseUrl) {
+  console.error('Missing DATABASE_URL .env value');
+  process.exit(1);
+}
 
 const app = express();
 
@@ -41,6 +48,7 @@ app.get('/about', (req, res) => {
 app.use('/routes', routesRouter);
 app.use('/tests', testsRouter);
 app.use('/recordings', recordingsRouter);
+app.use('/api', apiRouter);
 
 // Here we start the server
 app.listen(port, () => {
