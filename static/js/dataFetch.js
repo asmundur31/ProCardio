@@ -10,6 +10,11 @@ export async function getRouteById(id) {
   return route;
 }
 
+export async function getRecordingById(id) {
+  var recording = await getData('/api/recording/'+id);
+  return recording;
+}
+
 /**
  * Function that gets data by specific url 
  */
