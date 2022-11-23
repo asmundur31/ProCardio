@@ -27,17 +27,19 @@
         <% } %>
       </div>
       <div class="col-6">
-        <canvas id="myChart"></canvas>
+        <canvas id="SpeedChart"></canvas>
       </div>
       <div class="col-6">
-        <canvas id="myChart2"></canvas>
+        <canvas id="DistanceChart"></canvas>
       </div>
     </div>
   </div>
   <a href="/recordings" class="btn btn-secondary mt-5">Back</a>
+  
 </main>
 
 <!-- Include all scripts needed -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script type="module" src="<% root %>/static/js/charts.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="module" src="<% root %>/static/js/plot.js"></script>
 <%- include(root + '/views/footer') -%>
