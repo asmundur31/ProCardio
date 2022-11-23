@@ -11,7 +11,7 @@ export async function getRouteById(id) {
 }
 
 export async function getRecordingById(id) {
-  var recording = await getData('/api/recording/'+id);
+  var recording = await getData('/api/recordings/'+id);
   return recording;
 }
 

@@ -1,11 +1,11 @@
-import data from '/static/recordings/Test1.json' assert { type: 'json' };
+import { getRecordingById } from './dataFetch.js';
 
-async function fetchDataAsync(url) {
-  const response = await fetch(url);
-  console.log(await response.json());
-}
+var parameters = window.location.pathname.split('/');
+var id = parameters[parameters.length - 1];
 
-fetchDataAsync('http://localhost:3000/static/recordings/Test1.json');
+var jsonO = await getRecordingById(id);
+var data = jsonO.recording;
+
 
 let speedArr = [];
  data.treadmill.measurements.FTMS.forEach(item => {
