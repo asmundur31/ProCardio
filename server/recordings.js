@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
   var recordings = await getRecordings();
   // Sort by time
   recordings = recordings.sort((a, b) => {
-    if (a.recording.experiment.startTime > b.recording.experiment.startTime) {
+    if (a.recording.experiment.startTime < b.recording.experiment.startTime) {
       return -1;
     }
   });
