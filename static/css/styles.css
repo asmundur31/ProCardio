@@ -73,6 +73,7 @@ main {
 .btn {
   background-color: var(--font-color);
   border-color: var(--border-color);
+  min-width: 100px;
 }
 
 .btn:first-child:hover, :not(.btn-check)+.btn:hover {
