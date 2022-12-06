@@ -1,6 +1,6 @@
 {
     "experiment": {
-        "fileName": "recording_ParkRun_route_309d7046-d3c2-492d-a8ea-ce08aa90af08",
+        "fileName": "Test1",
         "name": "Park Run",
         "type": "route",
         "duration": 271646,
@@ -1253,7 +1253,1243 @@
     },
     "hr": {
         "device": "Not connected",
-        "measurements": {}
+        "measurements": {
+          "HR": [
+            {
+                "speed": "0.0",
+                "inclination": "0.0",
+                "heartRate": 25,
+                "duration": 808000,
+                "prettyDuration": "00:13:28",
+                "time": 1668003502009,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "0.0",
+                "inclination": "0.0",
+                "heartRate": 25,
+                "duration": 810000,
+                "prettyDuration": "00:13:30",
+                "time": 1668003504032,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "0.0",
+                "inclination": "0.0",
+                "heartRate": 25,
+                "duration": 812000,
+                "prettyDuration": "00:13:32",
+                "time": 1668003506013,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "2.0",
+                "inclination": "1.0",
+                "heartRate": 26,
+                "duration": 814000,
+                "prettyDuration": "00:13:34",
+                "time": 1668003507994,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "3.0",
+                "inclination": "2.0",
+                "heartRate": 27,
+                "duration": 816000,
+                "prettyDuration": "00:13:36",
+                "time": 1668003510018,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "3.0",
+                "inclination": "3.0",
+                "heartRate": 28,
+                "duration": 818000,
+                "prettyDuration": "00:13:38",
+                "time": 1668003511998,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "3.2",
+                "inclination": "4.0",
+                "heartRate": 29,
+                "duration": 820000,
+                "prettyDuration": "00:13:40",
+                "time": 1668003514020,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "3.6",
+                "inclination": "5.5",
+                "heartRate": 31,
+                "duration": 822000,
+                "prettyDuration": "00:13:42",
+                "time": 1668003516002,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "4.0",
+                "inclination": "6.0",
+                "heartRate": 33,
+                "duration": 824000,
+                "prettyDuration": "00:13:44",
+                "time": 1668003518023,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "4.6",
+                "inclination": "7.0",
+                "heartRate": 35,
+                "duration": 826000,
+                "prettyDuration": "00:13:46",
+                "time": 1668003520003,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "5.2",
+                "inclination": "8.0",
+                "heartRate": 37,
+                "duration": 828000,
+                "prettyDuration": "00:13:48",
+                "time": 1668003522028,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "5.6",
+                "inclination": "9.0",
+                "heartRate": 40,
+                "duration": 830000,
+                "prettyDuration": "00:13:50",
+                "time": 1668003524010,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.1",
+                "inclination": "10.0",
+                "heartRate": 43,
+                "duration": 832000,
+                "prettyDuration": "00:13:52",
+                "time": 1668003526032,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.6",
+                "inclination": "11.0",
+                "heartRate": 46,
+                "duration": 834000,
+                "prettyDuration": "00:13:54",
+                "time": 1668003528014,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.9",
+                "inclination": "12.0",
+                "heartRate": 50,
+                "duration": 836000,
+                "prettyDuration": "00:13:56",
+                "time": 1668003530036,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "13.0",
+                "heartRate": 54,
+                "duration": 838000,
+                "prettyDuration": "00:13:58",
+                "time": 1668003532020,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "12.5",
+                "heartRate": 58,
+                "duration": 840000,
+                "prettyDuration": "00:14:00",
+                "time": 1668003533998,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "12.0",
+                "heartRate": 62,
+                "duration": 842000,
+                "prettyDuration": "00:14:02",
+                "time": 1668003536021,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "11.5",
+                "heartRate": 66,
+                "duration": 844000,
+                "prettyDuration": "00:14:04",
+                "time": 1668003538001,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "11.5",
+                "heartRate": 70,
+                "duration": 846000,
+                "prettyDuration": "00:14:06",
+                "time": 1668003540026,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "11.0",
+                "heartRate": 74,
+                "duration": 848000,
+                "prettyDuration": "00:14:08",
+                "time": 1668003542006,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "10.5",
+                "heartRate": 78,
+                "duration": 850000,
+                "prettyDuration": "00:14:10",
+                "time": 1668003544074,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "10.0",
+                "heartRate": 82,
+                "duration": 852000,
+                "prettyDuration": "00:14:12",
+                "time": 1668003546010,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "8.5",
+                "heartRate": 86,
+                "duration": 854000,
+                "prettyDuration": "00:14:14",
+                "time": 1668003548034,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.5",
+                "heartRate": 90,
+                "duration": 856000,
+                "prettyDuration": "00:14:16",
+                "time": 1668003550017,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.0",
+                "heartRate": 94,
+                "duration": 858000,
+                "prettyDuration": "00:14:18",
+                "time": 1668003551998,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.0",
+                "heartRate": 98,
+                "duration": 860000,
+                "prettyDuration": "00:14:20",
+                "time": 1668003554019,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.0",
+                "heartRate": 102,
+                "duration": 862000,
+                "prettyDuration": "00:14:22",
+                "time": 1668003556001,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.5",
+                "heartRate": 106,
+                "duration": 864000,
+                "prettyDuration": "00:14:24",
+                "time": 1668003558024,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.0",
+                "heartRate": 110,
+                "duration": 866000,
+                "prettyDuration": "00:14:26",
+                "time": 1668003560007,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "3.5",
+                "heartRate": 114,
+                "duration": 868000,
+                "prettyDuration": "00:14:28",
+                "time": 1668003562029,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "2.5",
+                "heartRate": 118,
+                "duration": 870000,
+                "prettyDuration": "00:14:30",
+                "time": 1668003564012,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "1.0",
+                "heartRate": 122,
+                "duration": 872000,
+                "prettyDuration": "00:14:32",
+                "time": 1668003566034,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "1.0",
+                "heartRate": 126,
+                "duration": 874000,
+                "prettyDuration": "00:14:34",
+                "time": 1668003568014,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "1.0",
+                "heartRate": 130,
+                "duration": 876000,
+                "prettyDuration": "00:14:36",
+                "time": 1668003570039,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "2.0",
+                "heartRate": 134,
+                "duration": 878000,
+                "prettyDuration": "00:14:38",
+                "time": 1668003572064,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "3.5",
+                "heartRate": 138,
+                "duration": 880000,
+                "prettyDuration": "00:14:40",
+                "time": 1668003574002,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "4.5",
+                "heartRate": 142,
+                "duration": 882000,
+                "prettyDuration": "00:14:42",
+                "time": 1668003576024,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.5",
+                "heartRate": 146,
+                "duration": 884000,
+                "prettyDuration": "00:14:44",
+                "time": 1668003578004,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.5",
+                "heartRate": 150,
+                "duration": 886000,
+                "prettyDuration": "00:14:46",
+                "time": 1668003580030,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.0",
+                "heartRate": 154,
+                "duration": 888000,
+                "prettyDuration": "00:14:48",
+                "time": 1668003582011,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "8.0",
+                "heartRate": 158,
+                "duration": 890000,
+                "prettyDuration": "00:14:50",
+                "time": 1668003584035,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.5",
+                "heartRate": 162,
+                "duration": 892000,
+                "prettyDuration": "00:14:52",
+                "time": 1668003586013,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.5",
+                "heartRate": 166,
+                "duration": 894000,
+                "prettyDuration": "00:14:54",
+                "time": 1668003588039,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "8.0",
+                "heartRate": 170,
+                "duration": 896000,
+                "prettyDuration": "00:14:56",
+                "time": 1668003590018,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "8.0",
+                "heartRate": 174,
+                "duration": 898000,
+                "prettyDuration": "00:14:58",
+                "time": 1668003592044,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.0",
+                "heartRate": 178,
+                "duration": 900000,
+                "prettyDuration": "00:15:00",
+                "time": 1668003594025,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.5",
+                "heartRate": 182,
+                "duration": 902000,
+                "prettyDuration": "00:15:02",
+                "time": 1668003596007,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.5",
+                "heartRate": 186,
+                "duration": 904000,
+                "prettyDuration": "00:15:04",
+                "time": 1668003598030,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.5",
+                "heartRate": 190,
+                "duration": 906000,
+                "prettyDuration": "00:15:06",
+                "time": 1668003600012,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.0",
+                "heartRate": 194,
+                "duration": 908000,
+                "prettyDuration": "00:15:08",
+                "time": 1668003602034,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 198,
+                "duration": 910000,
+                "prettyDuration": "00:15:10",
+                "time": 1668003604014,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 202,
+                "duration": 912000,
+                "prettyDuration": "00:15:12",
+                "time": 1668003606040,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 206,
+                "duration": 914000,
+                "prettyDuration": "00:15:14",
+                "time": 1668003608020,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 210,
+                "duration": 916000,
+                "prettyDuration": "00:15:16",
+                "time": 1668003610044,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.0",
+                "heartRate": 214,
+                "duration": 918000,
+                "prettyDuration": "00:15:18",
+                "time": 1668003612023,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.0",
+                "heartRate": 218,
+                "duration": 920000,
+                "prettyDuration": "00:15:20",
+                "time": 1668003614007,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "5.5",
+                "heartRate": 222,
+                "duration": 922000,
+                "prettyDuration": "00:15:22",
+                "time": 1668003616030,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.5",
+                "heartRate": 226,
+                "duration": 924000,
+                "prettyDuration": "00:15:24",
+                "time": 1668003618011,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.0",
+                "heartRate": 230,
+                "duration": 926000,
+                "prettyDuration": "00:15:26",
+                "time": 1668003620034,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.5",
+                "heartRate": 234,
+                "duration": 928000,
+                "prettyDuration": "00:15:28",
+                "time": 1668003622013,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "5.5",
+                "heartRate": 238,
+                "duration": 930000,
+                "prettyDuration": "00:15:30",
+                "time": 1668003624038,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.0",
+                "heartRate": 242,
+                "duration": 932000,
+                "prettyDuration": "00:15:32",
+                "time": 1668003626019,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.0",
+                "heartRate": 246,
+                "duration": 934000,
+                "prettyDuration": "00:15:34",
+                "time": 1668003628044,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "8.0",
+                "heartRate": 250,
+                "duration": 936000,
+                "prettyDuration": "00:15:36",
+                "time": 1668003630024,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.5",
+                "heartRate": 254,
+                "duration": 938000,
+                "prettyDuration": "00:15:38",
+                "time": 1668003632050,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "6.0",
+                "heartRate": 258,
+                "duration": 940000,
+                "prettyDuration": "00:15:40",
+                "time": 1668003634030,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.0",
+                "heartRate": 262,
+                "duration": 942000,
+                "prettyDuration": "00:15:42",
+                "time": 1668003636010,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "7.0",
+                "heartRate": 266,
+                "duration": 944000,
+                "prettyDuration": "00:15:44",
+                "time": 1668003638033,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.5",
+                "heartRate": 270,
+                "duration": 946000,
+                "prettyDuration": "00:15:46",
+                "time": 1668003640014,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "5.5",
+                "heartRate": 274,
+                "duration": 948000,
+                "prettyDuration": "00:15:48",
+                "time": 1668003642037,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 278,
+                "duration": 950000,
+                "prettyDuration": "00:15:50",
+                "time": 1668003644019,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "3.0",
+                "heartRate": 282,
+                "duration": 952000,
+                "prettyDuration": "00:15:52",
+                "time": 1668003646043,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "2.0",
+                "heartRate": 286,
+                "duration": 954000,
+                "prettyDuration": "00:15:54",
+                "time": 1668003648022,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "2.0",
+                "heartRate": 290,
+                "duration": 956000,
+                "prettyDuration": "00:15:56",
+                "time": 1668003650048,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "3.5",
+                "heartRate": 294,
+                "duration": 958000,
+                "prettyDuration": "00:15:58",
+                "time": 1668003652028,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 298,
+                "duration": 960000,
+                "prettyDuration": "00:16:00",
+                "time": 1668003654053,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 302,
+                "duration": 962000,
+                "prettyDuration": "00:16:02",
+                "time": 1668003656034,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 306,
+                "duration": 964000,
+                "prettyDuration": "00:16:04",
+                "time": 1668003658013,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 310,
+                "duration": 966000,
+                "prettyDuration": "00:16:06",
+                "time": 1668003660037,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "4.5",
+                "heartRate": 314,
+                "duration": 968000,
+                "prettyDuration": "00:16:08",
+                "time": 1668003662018,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "5.0",
+                "heartRate": 318,
+                "duration": 970000,
+                "prettyDuration": "00:16:10",
+                "time": 1668003664043,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "5.0",
+                "heartRate": 322,
+                "duration": 972000,
+                "prettyDuration": "00:16:12",
+                "time": 1668003666022,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "6.0",
+                "heartRate": 326,
+                "duration": 974000,
+                "prettyDuration": "00:16:14",
+                "time": 1668003668048,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.0",
+                "heartRate": 330,
+                "duration": 976000,
+                "prettyDuration": "00:16:16",
+                "time": 1668003670029,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.0",
+                "heartRate": 334,
+                "duration": 978000,
+                "prettyDuration": "00:16:18",
+                "time": 1668003672052,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.0",
+                "heartRate": 338,
+                "duration": 980000,
+                "prettyDuration": "00:16:20",
+                "time": 1668003674033,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "8.0",
+                "heartRate": 342,
+                "duration": 982000,
+                "prettyDuration": "00:16:22",
+                "time": 1668003676059,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "9.0",
+                "heartRate": 346,
+                "duration": 984000,
+                "prettyDuration": "00:16:24",
+                "time": 1668003678037,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "10.0",
+                "heartRate": 350,
+                "duration": 986000,
+                "prettyDuration": "00:16:26",
+                "time": 1668003680019,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "9.5",
+                "heartRate": 354,
+                "duration": 988000,
+                "prettyDuration": "00:16:28",
+                "time": 1668003682043,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "8.0",
+                "heartRate": 358,
+                "duration": 990000,
+                "prettyDuration": "00:16:30",
+                "time": 1668003684022,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "7.0",
+                "heartRate": 362,
+                "duration": 992000,
+                "prettyDuration": "00:16:32",
+                "time": 1668003686047,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "6.0",
+                "heartRate": 366,
+                "duration": 994000,
+                "prettyDuration": "00:16:34",
+                "time": 1668003688028,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.1",
+                "inclination": "5.0",
+                "heartRate": 370,
+                "duration": 996000,
+                "prettyDuration": "00:16:36",
+                "time": 1668003690053,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.2",
+                "inclination": "3.5",
+                "heartRate": 374,
+                "duration": 998000,
+                "prettyDuration": "00:16:38",
+                "time": 1668003692033,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.0",
+                "inclination": "2.5",
+                "heartRate": 378,
+                "duration": 1000000,
+                "prettyDuration": "00:16:40",
+                "time": 1668003694058,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.9",
+                "inclination": "2.0",
+                "heartRate": 382,
+                "duration": 1002000,
+                "prettyDuration": "00:16:42",
+                "time": 1668003696037,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "8.0",
+                "inclination": "2.0",
+                "heartRate": 386,
+                "duration": 1004000,
+                "prettyDuration": "00:16:44",
+                "time": 1668003698063,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.8",
+                "inclination": "2.0",
+                "heartRate": 390,
+                "duration": 1006000,
+                "prettyDuration": "00:16:46",
+                "time": 1668003700043,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.7",
+                "inclination": "2.5",
+                "heartRate": 394,
+                "duration": 1008000,
+                "prettyDuration": "00:16:48",
+                "time": 1668003702068,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "4.0",
+                "heartRate": 398,
+                "duration": 1010000,
+                "prettyDuration": "00:16:50",
+                "time": 1668003704047,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "5.0",
+                "heartRate": 402,
+                "duration": 1012000,
+                "prettyDuration": "00:16:52",
+                "time": 1668003706071,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "6.0",
+                "heartRate": 406,
+                "duration": 1014000,
+                "prettyDuration": "00:16:54",
+                "time": 1668003708053,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "7.0",
+                "heartRate": 410,
+                "duration": 1016000,
+                "prettyDuration": "00:16:56",
+                "time": 1668003710077,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "8.0",
+                "heartRate": 414,
+                "duration": 1018000,
+                "prettyDuration": "00:16:58",
+                "time": 1668003712058,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "9.0",
+                "heartRate": 418,
+                "duration": 1020000,
+                "prettyDuration": "00:17:00",
+                "time": 1668003714037,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.6",
+                "inclination": "10.0",
+                "heartRate": 422,
+                "duration": 1022000,
+                "prettyDuration": "00:17:02",
+                "time": 1668003716061,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.3",
+                "inclination": "11.0",
+                "heartRate": 426,
+                "duration": 1024000,
+                "prettyDuration": "00:17:04",
+                "time": 1668003718042,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "12.0",
+                "heartRate": 429,
+                "duration": 1026000,
+                "prettyDuration": "00:17:06",
+                "time": 1668003720066,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "13.0",
+                "heartRate": 432,
+                "duration": 1028000,
+                "prettyDuration": "00:17:08",
+                "time": 1668003722047,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "14.0",
+                "heartRate": 435,
+                "duration": 1030000,
+                "prettyDuration": "00:17:10",
+                "time": 1668003724072,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "14.0",
+                "heartRate": 438,
+                "duration": 1032000,
+                "prettyDuration": "00:17:12",
+                "time": 1668003726097,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "13.0",
+                "heartRate": 441,
+                "duration": 1034000,
+                "prettyDuration": "00:17:14",
+                "time": 1668003728077,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "13.0",
+                "heartRate": 444,
+                "duration": 1036000,
+                "prettyDuration": "00:17:16",
+                "time": 1668003730057,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.1",
+                "inclination": "14.0",
+                "heartRate": 447,
+                "duration": 1038000,
+                "prettyDuration": "00:17:18",
+                "time": 1668003732038,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "15.0",
+                "heartRate": 450,
+                "duration": 1040000,
+                "prettyDuration": "00:17:20",
+                "time": 1668003734061,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "14.5",
+                "heartRate": 453,
+                "duration": 1042000,
+                "prettyDuration": "00:17:22",
+                "time": 1668003736042,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "14.5",
+                "heartRate": 456,
+                "duration": 1044000,
+                "prettyDuration": "00:17:24",
+                "time": 1668003738066,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "14.5",
+                "heartRate": 459,
+                "duration": 1046000,
+                "prettyDuration": "00:17:26",
+                "time": 1668003740092,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "14.5",
+                "heartRate": 462,
+                "duration": 1048000,
+                "prettyDuration": "00:17:28",
+                "time": 1668003742072,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "14.0",
+                "heartRate": 465,
+                "duration": 1050000,
+                "prettyDuration": "00:17:30",
+                "time": 1668003744052,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "12.5",
+                "heartRate": 468,
+                "duration": 1052000,
+                "prettyDuration": "00:17:32",
+                "time": 1668003746076,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.8",
+                "inclination": "12.0",
+                "heartRate": 471,
+                "duration": 1054000,
+                "prettyDuration": "00:17:34",
+                "time": 1668003748057,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "6.9",
+                "inclination": "11.0",
+                "heartRate": 474,
+                "duration": 1056000,
+                "prettyDuration": "00:17:36",
+                "time": 1668003750082,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "9.5",
+                "heartRate": 477,
+                "duration": 1058000,
+                "prettyDuration": "00:17:38",
+                "time": 1668003752062,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "10.0",
+                "heartRate": 480,
+                "duration": 1060000,
+                "prettyDuration": "00:17:40",
+                "time": 1668003754043,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "11.0",
+                "heartRate": 483,
+                "duration": 1062000,
+                "prettyDuration": "00:17:42",
+                "time": 1668003756067,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "11.0",
+                "heartRate": 486,
+                "duration": 1064000,
+                "prettyDuration": "00:17:44",
+                "time": 1668003758092,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "11.0",
+                "heartRate": 489,
+                "duration": 1066000,
+                "prettyDuration": "00:17:46",
+                "time": 1668003760071,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "11.5",
+                "heartRate": 492,
+                "duration": 1068000,
+                "prettyDuration": "00:17:48",
+                "time": 1668003762051,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "12.5",
+                "heartRate": 495,
+                "duration": 1070000,
+                "prettyDuration": "00:17:50",
+                "time": 1668003764076,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "13.5",
+                "heartRate": 498,
+                "duration": 1072000,
+                "prettyDuration": "00:17:52",
+                "time": 1668003766057,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "14.5",
+                "heartRate": 501,
+                "duration": 1074000,
+                "prettyDuration": "00:17:54",
+                "time": 1668003768081,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "14.5",
+                "heartRate": 504,
+                "duration": 1076000,
+                "prettyDuration": "00:17:56",
+                "time": 1668003770062,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "13.5",
+                "heartRate": 507,
+                "duration": 1078000,
+                "prettyDuration": "00:17:58",
+                "time": 1668003772086,
+                "measurementType": "FTMS"
+            },
+            {
+                "speed": "7.0",
+                "inclination": "13.0",
+                "heartRate": 510,
+                "duration": 1080000,
+                "prettyDuration": "00:18:00",
+                "time": 1668003774065,
+                "measurementType": "FTMS"
+            }
+        ]
+        }
     },
     "routeData": {
         "dataPoints": [

@@ -10,27 +10,14 @@
         <p>Start: <%= recording.experiment.startTime %></p>
         <p>End: <%= recording.experiment.endTime %></p>
       </div>
-      <div class="col-12">
-        <% for(var i=0; i<recording.treadmill.measurements.length; i++) { %>
-          <div>
-            Data point <%= i %>:
-          </div>
-          <div class="ms-3">
-            Time stamp: <%= recording.treadmill.measurements[i].time %>
-          </div>
-          <div class="ms-3">
-            Speed: <%= recording.treadmill.measurements[i].speed %>km/h
-          </div>
-          <div class="ms-3 mb-3">
-            Incline: <%= recording.treadmill.measurements[i].incline %>%
-          </div>
-        <% } %>
-      </div>
       <div class="col-6">
         <canvas id="SpeedChart"></canvas>
       </div>
       <div class="col-6">
         <canvas id="DistanceChart"></canvas>
+      </div>
+      <div class="col-6">
+        <canvas id="HeartRateChart"></canvas>
       </div>
     </div>
   </div>
