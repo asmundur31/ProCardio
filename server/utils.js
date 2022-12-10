@@ -13,11 +13,11 @@ export function formatRecording(rec) {
  */
 function formatDate(date) {
   var d = new Date(date);
-  var datestring = parseInt(d.getDate()) >= 10 ? d.getDate() : '0'+d.getDate();
-  datestring += '/';
+  var datestring = parseInt(d.getFullYear()) >= 10 ? d.getFullYear() : '0'+d.getFullYear();
+  datestring += '-';
   datestring += parseInt(d.getMonth()+1) >= 10 ? (d.getMonth()+1) : '0'+(d.getMonth()+1);
-  datestring += '/';
-  datestring += parseInt(d.getFullYear()) >= 10 ? d.getFullYear() : '0'+d.getFullYear();
+  datestring += '-';
+  datestring += parseInt(d.getDate()) >= 10 ? d.getDate() : '0'+d.getDate();
   datestring += ' ';
   datestring += parseInt(d.getHours()) >= 10 ? d.getHours() : '0'+d.getHours();
   datestring += ':';

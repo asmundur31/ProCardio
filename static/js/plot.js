@@ -48,10 +48,6 @@ for (let i = 0; i < speedArr.length; i++) {
   timestamp.push(i*2);
 }
 
-console.log(timestamp); 
-console.log(newDistance);
-console.log(newSpeed);
-
 ///////////////////////////////////////////////////////////////
 
 const Speed = {

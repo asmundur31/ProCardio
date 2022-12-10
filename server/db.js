@@ -91,12 +91,12 @@ export async function saveRoute(data) {
 export async function getRecordings() {
   const q = 'SELECT * FROM recordings;';
   const result = await query(q);
-  var recordings = []
+  var recordings = [];
   result?.rows.forEach((rec) => {
     var jsonO = JSON.parse(rec.recording);
     rec.recording = jsonO;
     recordings.push(formatRecording(rec));
-  })
+  });
   return recordings;
 }
 
