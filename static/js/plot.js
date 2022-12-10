@@ -6,62 +6,94 @@ var id = parameters[parameters.length - 1];
 var jsonO = await getRecordingById(id);
 var data = jsonO.recording;
 
-
-let speedArr = [];
+// Read the data from the recording
+var speedArr = [];
+var speedTimeArr = [];
 data.treadmill.measurements?.FTMS?.forEach(item => {
-  speedArr.push(item.speed)
+  speedArr.push({
+    'x': item.time,
+    'y': item.speed
+  });
+  speedTimeArr.push(item.time);
 });
 
-let distanceArr = [];
+var distArr = [];
+var distTimeArr = [];
 data.treadmill.measurements?.FTMS?.forEach(item => {
-  distanceArr.push(item.distance)
+  distArr.push({
+    'x': item.time,
+    'y': item.distance
+  });
+  distTimeArr.push(item.time);
 });
 
-let hrArr = [];
-let hrTimeArr = [];
+var hrArr = [];
+var hrTimeArr = [];
 data.hr.measurements?.HR?.forEach(item => {
-  hrArr.push(item.heartRate);
+  hrArr.push({
+    'x': item.time,
+    'y': item.heartRate
+  });
   hrTimeArr.push(item.time);
 });
 
+var treadmillInclineArr = [];
+var treadmillInclineTimeArr = [];
+data.treadmill.measurements?.FTMS?.forEach(item => {
+  treadmillInclineArr.push({
+    'x': item.time,
+    'y': (item.inclination-10)
+  });
+  treadmillInclineTimeArr.push(item.time);
+});
+
+var realInclineArr = [];
+var realInclineTimeArr = [];
+data.routeData.dataPoints?.forEach(item => {
+  realInclineArr.push({
+    'x': item.timestamp,
+    'y': item.incline
+  });
+  realInclineTimeArr.push(item.timestamp);
+});
+
+
+// Fix the time stamps
+var newSpeedTime = [];
+for(var i = 0; i < speedTimeArr.length; i++) {
+  newSpeedTime.push(((speedTimeArr[i] - speedTimeArr[0])/1000).toFixed(0));
+}
+var newDistTime = [];
+for(var i = 0; i < distTimeArr.length; i++) {
+  newDistTime.push(((distTimeArr[i] - distTimeArr[0])/1000).toFixed(0));
+}
 var newHRTime = [];
 for(var i = 0; i < hrTimeArr.length; i++) {
-  newHRTime.push((hrTimeArr[i] - hrTimeArr[0])/1000);
+  newHRTime.push(((hrTimeArr[i] - hrTimeArr[0])/1000).toFixed(0));
 }
-
-var newSpeed = JSON.parse("[" + speedArr.join() + "]");
-//Remove the quotation mark from orignal speed data
-
-//let newDistance = distanceArr.slice(0,6)
-
-var newDistance = [];
-for(var i = 0; i < distanceArr.length; i++) {
-
-  // Decrement the value of the original speed and push it to the new one
-  newDistance.push(distanceArr[i] - distanceArr[0]);
+var newTreadmillInclineTime = [];
+for(var i = 0; i < treadmillInclineTimeArr.length; i++) {
+  newTreadmillInclineTime.push(((treadmillInclineTimeArr[i] - treadmillInclineTimeArr[0])/1000).toFixed(0));
 }
-
-
-const timestamp = [];
-
-for (let i = 0; i < speedArr.length; i++) {
-  timestamp.push(i*2);
+var newRealInclineTime = [];
+for(var i = 0; i < realInclineTimeArr.length; i++) {
+  newRealInclineTime.push(((realInclineTimeArr[i] - realInclineTimeArr[0])/1000).toFixed(0));
 }
 
 ///////////////////////////////////////////////////////////////
 
+// Speed graph
 const Speed = {
-  labels: timestamp,
+  labels: newSpeedTime,
   datasets: [{
     label: 'Speed',
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
     pointRadius: 0,
-    data: newSpeed,
+    data: speedArr,
   }]
 };
-
-const config = {
+const configSpeed = {
   type: 'line',
   data: Speed,
   options: {
@@ -75,25 +107,25 @@ const config = {
       y: {
         title: {
           display: true,
-          text: 'Speed (m/s)'
+          text: 'Speed (km/h)'
         }
       }
     }
   },
 };
 
+// Distance graph
 const Distance = {
-  labels: timestamp,
+  labels: newDistTime,
   datasets: [{
     label: 'Distance',
     backgroundColor: 'rgb(50, 205, 50)',
     borderColor: 'rgb(50, 205, 50)',
     pointRadius: 0,
-    data: newDistance,
+    data: distArr,
   }]
 };
-
-const config1 = {
+const configDist = {
   type: 'line',
   data: Distance,
   options: {
@@ -114,6 +146,7 @@ const config1 = {
   },
 };
 
+// HR graph
 const HR = {
   labels: newHRTime,
   datasets: [{
@@ -124,7 +157,6 @@ const HR = {
     data: hrArr,
   }]
 };
-
 const configHR = {
   type: 'line',
   data: HR,
@@ -146,18 +178,50 @@ const configHR = {
   },
 }
 
-const SpeedChart = new Chart(document.getElementById('SpeedChart'), config);
-const DistanceChart = new Chart(document.getElementById('DistanceChart'), config1);
+// Add the graphs to the canvas
+const SpeedChart = new Chart(document.getElementById('SpeedChart'), configSpeed);
+const DistanceChart = new Chart(document.getElementById('DistanceChart'), configDist);
 const HeartRateChart = new Chart(document.getElementById('HeartRateChart'), configHR);
 
+// COMPARISON GRAPHS
 
-  
+// Incline comparison graph
+const inclineComparison = {
+  labels: newTreadmillInclineTime,
+  datasets: [{
+    label: 'Treadmill incline',
+    backgroundColor: 'rgb(50, 50, 205)',
+    borderColor: 'rgb(50, 50, 205)',
+    pointRadius: 0,
+    data: treadmillInclineArr,
+  },{
+    label: 'Route incline',
+    backgroundColor: 'rgb(205, 50, 50)',
+    borderColor: 'rgb(205, 50, 50)',
+    pointRadius: 0,
+    data: realInclineArr,
+  }]
+};
+const configInclineComparison = {
+  type: 'line',
+  data: inclineComparison,
+  options: {
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Time (s)'
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Incline (%)'
+        }
+      }
+    }     
+  },
+};
 
-
-
-
-
-
-
-
-
+// Comparisons
+const inclineComparisonChart = new Chart(document.getElementById('inclineComparisonChart'), configInclineComparison);

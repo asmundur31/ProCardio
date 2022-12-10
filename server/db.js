@@ -112,7 +112,7 @@ export async function getRecordingById(id) {
   const rec = result?.rows[0];
   var jsonO = JSON.parse(rec.recording);
   rec.recording = jsonO;
-  return rec;
+  return formatRecording(rec);
 }
 
 /**
