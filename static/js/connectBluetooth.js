@@ -188,6 +188,8 @@ export async function startTreadmill() {
 export function startRecording() {
   console.log('Start recording');
   recordingStartTime = Date.now();
+  treadmillMeasurements = {};
+  heartRateMeasurements = {};
 }
 
 /**

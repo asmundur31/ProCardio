@@ -77,7 +77,7 @@ for(var i = 0; i < treadmillInclineTimeArr.length; i++) {
 }
 var newRealInclineTime = [];
 for(var i = 0; i < realInclineTimeArr.length; i++) {
-  newRealInclineTime.push(((realInclineTimeArr[i] - treadmillInclineTimeArr[0])/1000).toFixed(0));
+  newRealInclineTime.push(((realInclineTimeArr[i] - realInclineTimeArr[0])/1000).toFixed(0));
 }
 
 ///////////////////////////////////////////////////////////////
