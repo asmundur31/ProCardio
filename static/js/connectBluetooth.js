@@ -190,6 +190,9 @@ export function startRecording() {
   recordingStartTime = Date.now();
   treadmillMeasurements = {};
   heartRateMeasurements = {};
+  routeData = {
+    dataPoints: []
+  };
 }
 
 /**
