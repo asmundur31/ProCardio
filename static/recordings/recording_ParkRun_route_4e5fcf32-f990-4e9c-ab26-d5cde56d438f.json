@@ -1,0 +1,1477 @@
+{
+  "experiment": {
+    "fileName": "recording_ParkRun_route_4e5fcf32-f990-4e9c-ab26-d5cde56d438f",
+    "name": "Park Run",
+    "type": "route",
+    "duration": 94054,
+    "startTime": 1670849896007,
+    "endTime": 1670849990061,
+    "devices": {
+      "treadmill": "raspberrypi",
+      "hr": "Polar Sense B37AD727"
+    }
+  },
+  "treadmill": {
+    "device": "raspberrypi",
+    "measurements": {
+      "FTMS": [
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 320,
+          "duration": 1212000,
+          "prettyDuration": "00:20:12",
+          "time": 1670849896803,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "0.0",
+          "inclination": "0.0",
+          "distance": 320,
+          "duration": 1214000,
+          "prettyDuration": "00:20:14",
+          "time": 1670849898828,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "1.3",
+          "inclination": "0.5",
+          "distance": 320,
+          "duration": 1216000,
+          "prettyDuration": "00:20:16",
+          "time": 1670849900763,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.0",
+          "inclination": "1.5",
+          "distance": 321,
+          "duration": 1218000,
+          "prettyDuration": "00:20:18",
+          "time": 1670849902788,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.1",
+          "inclination": "2.5",
+          "distance": 322,
+          "duration": 1220000,
+          "prettyDuration": "00:20:20",
+          "time": 1670849904791,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.0",
+          "inclination": "4.0",
+          "distance": 323,
+          "duration": 1222000,
+          "prettyDuration": "00:20:22",
+          "time": 1670849906792,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.0",
+          "inclination": "5.0",
+          "distance": 324,
+          "duration": 1224000,
+          "prettyDuration": "00:20:24",
+          "time": 1670849908773,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "3.2",
+          "inclination": "6.0",
+          "distance": 325,
+          "duration": 1226000,
+          "prettyDuration": "00:20:26",
+          "time": 1670849910798,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.0",
+          "inclination": "6.5",
+          "distance": 327,
+          "duration": 1228000,
+          "prettyDuration": "00:20:28",
+          "time": 1670849912778,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.0",
+          "inclination": "7.5",
+          "distance": 329,
+          "duration": 1230000,
+          "prettyDuration": "00:20:30",
+          "time": 1670849914758,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.0",
+          "inclination": "8.5",
+          "distance": 331,
+          "duration": 1232000,
+          "prettyDuration": "00:20:32",
+          "time": 1670849916783,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.0",
+          "inclination": "9.5",
+          "distance": 333,
+          "duration": 1234000,
+          "prettyDuration": "00:20:34",
+          "time": 1670849918763,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.0",
+          "inclination": "10.5",
+          "distance": 335,
+          "duration": 1236000,
+          "prettyDuration": "00:20:36",
+          "time": 1670849920789,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.1",
+          "inclination": "11.5",
+          "distance": 337,
+          "duration": 1238000,
+          "prettyDuration": "00:20:38",
+          "time": 1670849922768,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.1",
+          "inclination": "12.5",
+          "distance": 339,
+          "duration": 1240000,
+          "prettyDuration": "00:20:40",
+          "time": 1670849924793,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "13.0",
+          "distance": 341,
+          "duration": 1242000,
+          "prettyDuration": "00:20:42",
+          "time": 1670849926774,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.2",
+          "inclination": "13.0",
+          "distance": 343,
+          "duration": 1244000,
+          "prettyDuration": "00:20:44",
+          "time": 1670849928799,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "13.0",
+          "distance": 345,
+          "duration": 1246000,
+          "prettyDuration": "00:20:46",
+          "time": 1670849930779,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "12.5",
+          "distance": 347,
+          "duration": 1248000,
+          "prettyDuration": "00:20:48",
+          "time": 1670849932804,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "12.0",
+          "distance": 349,
+          "duration": 1250000,
+          "prettyDuration": "00:20:50",
+          "time": 1670849934784,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "12.0",
+          "distance": 351,
+          "duration": 1252000,
+          "prettyDuration": "00:20:52",
+          "time": 1670849936809,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.0",
+          "inclination": "12.0",
+          "distance": 353,
+          "duration": 1254000,
+          "prettyDuration": "00:20:54",
+          "time": 1670849938789,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.0",
+          "inclination": "11.5",
+          "distance": 355,
+          "duration": 1256000,
+          "prettyDuration": "00:20:56",
+          "time": 1670849940814,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "11.5",
+          "distance": 357,
+          "duration": 1258000,
+          "prettyDuration": "00:20:58",
+          "time": 1670849942794,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.0",
+          "inclination": "11.0",
+          "distance": 359,
+          "duration": 1260000,
+          "prettyDuration": "00:21:00",
+          "time": 1670849944819,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.0",
+          "inclination": "10.5",
+          "distance": 361,
+          "duration": 1262000,
+          "prettyDuration": "00:21:02",
+          "time": 1670849946800,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.2",
+          "inclination": "10.5",
+          "distance": 363,
+          "duration": 1264000,
+          "prettyDuration": "00:21:04",
+          "time": 1670849948779,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.2",
+          "inclination": "10.5",
+          "distance": 365,
+          "duration": 1266000,
+          "prettyDuration": "00:21:06",
+          "time": 1670849950832,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.1",
+          "inclination": "9.5",
+          "distance": 367,
+          "duration": 1268000,
+          "prettyDuration": "00:21:08",
+          "time": 1670849952784,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.0",
+          "inclination": "8.5",
+          "distance": 369,
+          "duration": 1270000,
+          "prettyDuration": "00:21:10",
+          "time": 1670849954810,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.0",
+          "inclination": "7.0",
+          "distance": 371,
+          "duration": 1272000,
+          "prettyDuration": "00:21:12",
+          "time": 1670849956789,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.2",
+          "inclination": "7.0",
+          "distance": 373,
+          "duration": 1274000,
+          "prettyDuration": "00:21:14",
+          "time": 1670849958814,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.2",
+          "inclination": "7.0",
+          "distance": 375,
+          "duration": 1276000,
+          "prettyDuration": "00:21:16",
+          "time": 1670849960795,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.3",
+          "inclination": "7.0",
+          "distance": 377,
+          "duration": 1278000,
+          "prettyDuration": "00:21:18",
+          "time": 1670849962820,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "6.5",
+          "inclination": "7.0",
+          "distance": 380,
+          "duration": 1280000,
+          "prettyDuration": "00:21:20",
+          "time": 1670849964800,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "7.3",
+          "inclination": "6.5",
+          "distance": 384,
+          "duration": 1282000,
+          "prettyDuration": "00:21:22",
+          "time": 1670849966824,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "7.6",
+          "inclination": "5.5",
+          "distance": 388,
+          "duration": 1284000,
+          "prettyDuration": "00:21:24",
+          "time": 1670849968804,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "8.2",
+          "inclination": "5.5",
+          "distance": 392,
+          "duration": 1286000,
+          "prettyDuration": "00:21:26",
+          "time": 1670849970830,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "8.3",
+          "inclination": "4.5",
+          "distance": 396,
+          "duration": 1288000,
+          "prettyDuration": "00:21:28",
+          "time": 1670849972809,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "8.3",
+          "inclination": "3.0",
+          "distance": 400,
+          "duration": 1290000,
+          "prettyDuration": "00:21:30",
+          "time": 1670849974865,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "7.9",
+          "inclination": "2.0",
+          "distance": 404,
+          "duration": 1292000,
+          "prettyDuration": "00:21:32",
+          "time": 1670849976815,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "7.9",
+          "inclination": "1.0",
+          "distance": 408,
+          "duration": 1294000,
+          "prettyDuration": "00:21:34",
+          "time": 1670849978840,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "6.5",
+          "inclination": "1.0",
+          "distance": 411,
+          "duration": 1296000,
+          "prettyDuration": "00:21:36",
+          "time": 1670849980820,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "5.2",
+          "inclination": "1.5",
+          "distance": 413,
+          "duration": 1298000,
+          "prettyDuration": "00:21:38",
+          "time": 1670849982800,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.3",
+          "inclination": "2.5",
+          "distance": 415,
+          "duration": 1300000,
+          "prettyDuration": "00:21:40",
+          "time": 1670849984869,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.1",
+          "inclination": "3.5",
+          "distance": 417,
+          "duration": 1302000,
+          "prettyDuration": "00:21:42",
+          "time": 1670849986831,
+          "measurementType": "FTMS"
+        },
+        {
+          "speed": "4.1",
+          "inclination": "5.0",
+          "distance": 419,
+          "duration": 1304000,
+          "prettyDuration": "00:21:44",
+          "time": 1670849988830,
+          "measurementType": "FTMS"
+        }
+      ]
+    }
+  },
+  "hr": {
+    "device": "Polar Sense B37AD727",
+    "measurements": {
+      "HR": [
+        {
+          "heartRate": 74,
+          "time": 1670849896504,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 74,
+          "time": 1670849897500,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 74,
+          "time": 1670849898490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 73,
+          "time": 1670849899479,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 73,
+          "time": 1670849900484,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 73,
+          "time": 1670849901491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 73,
+          "time": 1670849902479,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 74,
+          "time": 1670849903484,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 75,
+          "time": 1670849904491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 75,
+          "time": 1670849905480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 75,
+          "time": 1670849906485,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 75,
+          "time": 1670849907505,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 75,
+          "time": 1670849908480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 76,
+          "time": 1670849909484,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 76,
+          "time": 1670849910490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 77,
+          "time": 1670849911481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 78,
+          "time": 1670849912530,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 78,
+          "time": 1670849913491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 79,
+          "time": 1670849914480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 79,
+          "time": 1670849915485,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 80,
+          "time": 1670849916490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 80,
+          "time": 1670849917480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 80,
+          "time": 1670849918485,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 80,
+          "time": 1670849919490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 80,
+          "time": 1670849920480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 81,
+          "time": 1670849921485,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 81,
+          "time": 1670849922505,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 81,
+          "time": 1670849923483,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 81,
+          "time": 1670849924500,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 81,
+          "time": 1670849925490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 82,
+          "time": 1670849926480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 82,
+          "time": 1670849927485,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 82,
+          "time": 1670849928490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 82,
+          "time": 1670849929495,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 83,
+          "time": 1670849930486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 83,
+          "time": 1670849931490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 84,
+          "time": 1670849932480,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 85,
+          "time": 1670849933486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 86,
+          "time": 1670849934490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 88,
+          "time": 1670849935497,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 90,
+          "time": 1670849936486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 92,
+          "time": 1670849937490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 93,
+          "time": 1670849938481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 94,
+          "time": 1670849939485,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 96,
+          "time": 1670849940490,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 97,
+          "time": 1670849941494,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 98,
+          "time": 1670849942501,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 99,
+          "time": 1670849943491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849944496,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849945486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 102,
+          "time": 1670849946491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849947535,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849948486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849949506,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849950481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849951501,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849952491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849953481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849954487,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849955491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849956481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849957486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849958506,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 99,
+          "time": 1670849959481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 99,
+          "time": 1670849960486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 99,
+          "time": 1670849961491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 99,
+          "time": 1670849962496,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849963486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849964492,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849965481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849966486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849967491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 102,
+          "time": 1670849968481,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 102,
+          "time": 1670849969487,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 102,
+          "time": 1670849970522,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 103,
+          "time": 1670849971483,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 104,
+          "time": 1670849972486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 103,
+          "time": 1670849973491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849974497,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849975486,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849976510,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849977527,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 100,
+          "time": 1670849978487,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 101,
+          "time": 1670849979491,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 102,
+          "time": 1670849980482,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 103,
+          "time": 1670849981502,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 104,
+          "time": 1670849982493,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 105,
+          "time": 1670849983482,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 107,
+          "time": 1670849984487,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 107,
+          "time": 1670849985508,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 108,
+          "time": 1670849986483,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 109,
+          "time": 1670849987487,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 109,
+          "time": 1670849988498,
+          "measurementType": "HR"
+        },
+        {
+          "heartRate": 110,
+          "time": 1670849989496,
+          "measurementType": "HR"
+        }
+      ]
+    }
+  },
+  "routeData": {
+    "dataPoints": [
+      {
+        "timestamp": 1670849899040,
+        "incline": -0.08258660419546235,
+        "elevation": 32.502663595304725,
+        "currentDistance": 0.40733566727484516
+      },
+      {
+        "timestamp": 1670849900043,
+        "incline": -0.08258660419546235,
+        "elevation": 32.50254153906365,
+        "currentDistance": 0.5551274820160713
+      },
+      {
+        "timestamp": 1670849901044,
+        "incline": -0.08258660419546235,
+        "elevation": 32.50236790608979,
+        "currentDistance": 0.7653709900892138
+      },
+      {
+        "timestamp": 1670849902041,
+        "incline": -0.08258660419546235,
+        "elevation": 32.50200976516355,
+        "currentDistance": 1.1990259753347958
+      },
+      {
+        "timestamp": 1670849903044,
+        "incline": -0.08258660419546235,
+        "elevation": 32.50156189291887,
+        "currentDistance": 1.7413321387183025
+      },
+      {
+        "timestamp": 1670849904043,
+        "incline": -0.08258660419546235,
+        "elevation": 32.500733367012934,
+        "currentDistance": 2.7445528353511834
+      },
+      {
+        "timestamp": 1670849905039,
+        "incline": -0.08258660419546235,
+        "elevation": 32.4999108923482,
+        "currentDistance": 3.740446385817379
+      },
+      {
+        "timestamp": 1670849906042,
+        "incline": -0.08258660419546235,
+        "elevation": 32.499051647471205,
+        "currentDistance": 4.780863152394289
+      },
+      {
+        "timestamp": 1670849907045,
+        "incline": -0.08258660419546235,
+        "elevation": 32.498197177309805,
+        "currentDistance": 5.815498453995218
+      },
+      {
+        "timestamp": 1670849908044,
+        "incline": -0.08258660419546235,
+        "elevation": 32.497379006752155,
+        "currentDistance": 6.806180375869103
+      },
+      {
+        "timestamp": 1670849909043,
+        "incline": -0.08258660419546235,
+        "elevation": 32.496550553398365,
+        "currentDistance": 7.809313222726169
+      },
+      {
+        "timestamp": 1670849910041,
+        "incline": -0.08258660419546235,
+        "elevation": 32.495722619674815,
+        "currentDistance": 8.811816875242931
+      },
+      {
+        "timestamp": 1670849911044,
+        "incline": -0.08258660419546235,
+        "elevation": 32.4948894308228,
+        "currentDistance": 9.820683700710672
+      },
+      {
+        "timestamp": 1670849912043,
+        "incline": -0.08258660419546235,
+        "elevation": 32.49400528683343,
+        "currentDistance": 10.891249560620231
+      },
+      {
+        "timestamp": 1670849913044,
+        "incline": -0.08258660419546235,
+        "elevation": 32.49308347651474,
+        "currentDistance": 12.00742370008774
+      },
+      {
+        "timestamp": 1670849914042,
+        "incline": 1.7888843618995616,
+        "elevation": 32.5150750742368,
+        "currentDistance": 13.342514732251493
+      },
+      {
+        "timestamp": 1670849915044,
+        "incline": 1.7888843618995616,
+        "elevation": 32.539079699072,
+        "currentDistance": 14.68439156601745
+      },
+      {
+        "timestamp": 1670849916041,
+        "incline": 1.7888843618995616,
+        "elevation": 32.562724783121205,
+        "currentDistance": 16.006169795667724
+      },
+      {
+        "timestamp": 1670849917043,
+        "incline": 1.7888843618995616,
+        "elevation": 32.58671615612825,
+        "currentDistance": 17.34730584213491
+      },
+      {
+        "timestamp": 1670849918042,
+        "incline": 1.7888843618995616,
+        "elevation": 32.610371433891416,
+        "currentDistance": 18.669653908168858
+      },
+      {
+        "timestamp": 1670849919044,
+        "incline": 1.7888843618995616,
+        "elevation": 32.63438986271425,
+        "currentDistance": 20.01230239537103
+      },
+      {
+        "timestamp": 1670849920041,
+        "incline": 1.7888843618995616,
+        "elevation": 32.658270166712995,
+        "currentDistance": 21.347229599574483
+      },
+      {
+        "timestamp": 1670849921043,
+        "incline": 1.7888843618995616,
+        "elevation": 32.682013195363794,
+        "currentDistance": 22.674483007144513
+      },
+      {
+        "timestamp": 1670849922042,
+        "incline": 1.7888843618995616,
+        "elevation": 32.705945062565625,
+        "currentDistance": 24.012292633722026
+      },
+      {
+        "timestamp": 1670849923045,
+        "incline": 3.090328178693966,
+        "elevation": 32.731497917171495,
+        "currentDistance": 25.35836963649928
+      },
+      {
+        "timestamp": 1670849924043,
+        "incline": 3.090328178693966,
+        "elevation": 32.77342050155018,
+        "currentDistance": 26.714943500327372
+      },
+      {
+        "timestamp": 1670849925044,
+        "incline": 3.090328178693966,
+        "elevation": 32.81583777496327,
+        "currentDistance": 28.08752501790006
+      },
+      {
+        "timestamp": 1670849926042,
+        "incline": 3.090328178693966,
+        "elevation": 32.8577365860926,
+        "currentDistance": 29.4433296026102
+      },
+      {
+        "timestamp": 1670849927043,
+        "incline": 3.090328178693966,
+        "elevation": 32.902298221272346,
+        "currentDistance": 30.885300571485974
+      },
+      {
+        "timestamp": 1670849928044,
+        "incline": 3.090328178693966,
+        "elevation": 32.9550964802371,
+        "currentDistance": 32.59380063723185
+      },
+      {
+        "timestamp": 1670849929043,
+        "incline": 3.090328178693966,
+        "elevation": 33.00746432598976,
+        "currentDistance": 34.28837295203354
+      },
+      {
+        "timestamp": 1670849930044,
+        "incline": 3.090328178693966,
+        "elevation": 33.06127023320572,
+        "currentDistance": 36.02947953051664
+      },
+      {
+        "timestamp": 1670849931043,
+        "incline": 3.090328178693966,
+        "elevation": 33.11421347964184,
+        "currentDistance": 37.74267124915473
+      },
+      {
+        "timestamp": 1670849932044,
+        "incline": 1.897266809257773,
+        "elevation": 33.14927569740699,
+        "currentDistance": 39.4526149004059
+      },
+      {
+        "timestamp": 1670849933045,
+        "incline": 1.897266809257773,
+        "elevation": 33.181701493595725,
+        "currentDistance": 41.16169429980851
+      },
+      {
+        "timestamp": 1670849934044,
+        "incline": 1.897266809257773,
+        "elevation": 33.21371033334189,
+        "currentDistance": 42.848797009347585
+      },
+      {
+        "timestamp": 1670849935044,
+        "incline": 1.897266809257773,
+        "elevation": 33.24610468661825,
+        "currentDistance": 44.55621913460102
+      },
+      {
+        "timestamp": 1670849936042,
+        "incline": 1.897266809257773,
+        "elevation": 33.27842633379065,
+        "currentDistance": 46.25980911017428
+      },
+      {
+        "timestamp": 1670849937045,
+        "incline": 1.897266809257773,
+        "elevation": 33.310571846597185,
+        "currentDistance": 47.95411550133026
+      },
+      {
+        "timestamp": 1670849938044,
+        "incline": 1.897266809257773,
+        "elevation": 33.342872862173785,
+        "currentDistance": 49.656618039138
+      },
+      {
+        "timestamp": 1670849939040,
+        "incline": 1.715586986751074,
+        "elevation": 33.37170683591493,
+        "currentDistance": 51.33661441410908
+      },
+      {
+        "timestamp": 1670849940044,
+        "incline": 1.715586986751074,
+        "elevation": 33.40046806439449,
+        "currentDistance": 53.01308017781967
+      },
+      {
+        "timestamp": 1670849941040,
+        "incline": 1.715586986751074,
+        "elevation": 33.42906961757292,
+        "currentDistance": 54.68023861393033
+      },
+      {
+        "timestamp": 1670849942044,
+        "incline": 1.715586986751074,
+        "elevation": 33.457583756670694,
+        "currentDistance": 56.34230176304365
+      },
+      {
+        "timestamp": 1670849943044,
+        "incline": 1.715586986751074,
+        "elevation": 33.48640486338817,
+        "currentDistance": 58.02225777460422
+      },
+      {
+        "timestamp": 1670849944042,
+        "incline": 0.47647633976248366,
+        "elevation": 33.51012481156449,
+        "currentDistance": 59.72696130544391
+      },
+      {
+        "timestamp": 1670849945041,
+        "incline": 0.47647633976248366,
+        "elevation": 33.518138443616735,
+        "currentDistance": 61.40881439729842
+      },
+      {
+        "timestamp": 1670849946042,
+        "incline": 0.47647633976248366,
+        "elevation": 33.52611705042048,
+        "currentDistance": 63.083316599803624
+      },
+      {
+        "timestamp": 1670849947040,
+        "incline": 0.47647633976248366,
+        "elevation": 33.5339940093373,
+        "currentDistance": 64.73648555269519
+      },
+      {
+        "timestamp": 1670849948043,
+        "incline": 0.47647633976248366,
+        "elevation": 33.541991995420986,
+        "currentDistance": 66.41505496238882
+      },
+      {
+        "timestamp": 1670849949045,
+        "incline": 0.47647633976248366,
+        "elevation": 33.55004108261821,
+        "currentDistance": 68.10434916768676
+      },
+      {
+        "timestamp": 1670849950044,
+        "incline": 0.47647633976248366,
+        "elevation": 33.558245441629325,
+        "currentDistance": 69.82623089117581
+      },
+      {
+        "timestamp": 1670849951040,
+        "incline": -3.5522178009307903,
+        "elevation": 33.51150271379727,
+        "currentDistance": 71.55973490257345
+      },
+      {
+        "timestamp": 1670849952044,
+        "incline": -3.5522178009307903,
+        "elevation": 33.45010030491318,
+        "currentDistance": 73.28830033197929
+      },
+      {
+        "timestamp": 1670849953044,
+        "incline": -3.5522178009307903,
+        "elevation": 33.388514201426766,
+        "currentDistance": 75.02203702656693
+      },
+      {
+        "timestamp": 1670849954044,
+        "incline": -3.5522178009307903,
+        "elevation": 33.32797957663969,
+        "currentDistance": 76.7261730953412
+      },
+      {
+        "timestamp": 1670849955045,
+        "incline": -3.5522178009307903,
+        "elevation": 33.26812010120595,
+        "currentDistance": 78.41130274640184
+      },
+      {
+        "timestamp": 1670849956041,
+        "incline": -3.5522178009307903,
+        "elevation": 33.20885084378279,
+        "currentDistance": 80.07981691824197
+      },
+      {
+        "timestamp": 1670849957046,
+        "incline": -3.5522178009307903,
+        "elevation": 33.14918003906778,
+        "currentDistance": 81.75963521934315
+      },
+      {
+        "timestamp": 1670849958043,
+        "incline": -2.7566238923569375,
+        "elevation": 33.092645125183964,
+        "currentDistance": 83.4109308351234
+      },
+      {
+        "timestamp": 1670849959045,
+        "incline": -2.7566238923569375,
+        "elevation": 33.04609472022594,
+        "currentDistance": 85.0996053433541
+      },
+      {
+        "timestamp": 1670849960043,
+        "incline": -2.7566238923569375,
+        "elevation": 32.99872801008932,
+        "currentDistance": 86.81789234898949
+      },
+      {
+        "timestamp": 1670849961044,
+        "incline": -2.7566238923569375,
+        "elevation": 32.95071549469317,
+        "currentDistance": 88.55960675294851
+      },
+      {
+        "timestamp": 1670849962043,
+        "incline": -2.7566238923569375,
+        "elevation": 32.902761165257864,
+        "currentDistance": 90.2992103879697
+      },
+      {
+        "timestamp": 1670849963042,
+        "incline": -2.7566238923569375,
+        "elevation": 32.85521747555079,
+        "currentDistance": 92.02391755019443
+      },
+      {
+        "timestamp": 1670849964041,
+        "incline": -2.7566238923569375,
+        "elevation": 32.806330469015194,
+        "currentDistance": 93.79735522049597
+      },
+      {
+        "timestamp": 1670849965041,
+        "incline": -4.461944954208486,
+        "elevation": 32.752607024800376,
+        "currentDistance": 95.61601178215997
+      },
+      {
+        "timestamp": 1670849966045,
+        "incline": -4.461944954208486,
+        "elevation": 32.65521238706606,
+        "currentDistance": 97.79879616730706
+      },
+      {
+        "timestamp": 1670849967046,
+        "incline": -4.461944954208486,
+        "elevation": 32.55607502359886,
+        "currentDistance": 100.02063808791819
+      },
+      {
+        "timestamp": 1670849968045,
+        "incline": -4.461944954208486,
+        "elevation": 32.44839830404057,
+        "currentDistance": 102.43386193230299
+      },
+      {
+        "timestamp": 1670849969044,
+        "incline": -4.461944954208486,
+        "elevation": 32.338723329602445,
+        "currentDistance": 104.89187016780765
+      },
+      {
+        "timestamp": 1670849970044,
+        "incline": -4.461944954208486,
+        "elevation": 32.22528057153576,
+        "currentDistance": 107.43432103241739
+      },
+      {
+        "timestamp": 1670849971045,
+        "incline": -7.204410641361815,
+        "elevation": 32.106867268035565,
+        "currentDistance": 109.98466175662267
+      },
+      {
+        "timestamp": 1670849972045,
+        "incline": -7.204410641361815,
+        "elevation": 31.90920666270719,
+        "currentDistance": 112.72826723898599
+      },
+      {
+        "timestamp": 1670849973042,
+        "incline": -7.204410641361815,
+        "elevation": 31.713802794407847,
+        "currentDistance": 115.44054834047535
+      },
+      {
+        "timestamp": 1670849974045,
+        "incline": -7.204410641361815,
+        "elevation": 31.513012555130942,
+        "currentDistance": 118.22759434982044
+      },
+      {
+        "timestamp": 1670849975044,
+        "incline": -7.204410641361815,
+        "elevation": 31.313159700748983,
+        "currentDistance": 121.00162909507172
+      },
+      {
+        "timestamp": 1670849976045,
+        "incline": -8.971952839434362,
+        "elevation": 31.07063841361896,
+        "currentDistance": 123.75439232298426
+      },
+      {
+        "timestamp": 1670849977044,
+        "incline": -8.971952839434362,
+        "elevation": 30.823539519990934,
+        "currentDistance": 126.5085184095811
+      },
+      {
+        "timestamp": 1670849978043,
+        "incline": -8.971952839434362,
+        "elevation": 30.589033251138588,
+        "currentDistance": 129.12228904624362
+      },
+      {
+        "timestamp": 1670849979046,
+        "incline": -8.971952839434362,
+        "elevation": 30.3511437555263,
+        "currentDistance": 131.77376860559542
+      },
+      {
+        "timestamp": 1670849980045,
+        "incline": -8.971952839434362,
+        "elevation": 30.1143319418293,
+        "currentDistance": 134.41323648884313
+      },
+      {
+        "timestamp": 1670849981046,
+        "incline": -8.971952839434362,
+        "elevation": 29.885275859140737,
+        "currentDistance": 136.9662601926882
+      },
+      {
+        "timestamp": 1670849982043,
+        "incline": -3.2443859517452607,
+        "elevation": 29.783417800093886,
+        "currentDistance": 139.13619476738353
+      },
+      {
+        "timestamp": 1670849983045,
+        "incline": -3.2443859517452607,
+        "elevation": 29.715851989158253,
+        "currentDistance": 141.21874018400663
+      },
+      {
+        "timestamp": 1670849984044,
+        "incline": -3.2443859517452607,
+        "elevation": 29.659520378075122,
+        "currentDistance": 142.9550197734564
+      },
+      {
+        "timestamp": 1670849985045,
+        "incline": -3.2443859517452607,
+        "elevation": 29.604058381784675,
+        "currentDistance": 144.66449568400932
+      },
+      {
+        "timestamp": 1670849986044,
+        "incline": -3.2443859517452607,
+        "elevation": 29.55792604498583,
+        "currentDistance": 146.08640841217994
+      },
+      {
+        "timestamp": 1670849987046,
+        "incline": -3.2443859517452607,
+        "elevation": 29.511421720425993,
+        "currentDistance": 147.51978672325362
+      },
+      {
+        "timestamp": 1670849988045,
+        "incline": -3.2443859517452607,
+        "elevation": 29.466943877959434,
+        "currentDistance": 148.89070384372232
+      },
+      {
+        "timestamp": 1670849989046,
+        "incline": -3.2443859517452607,
+        "elevation": 29.422806979338425,
+        "currentDistance": 150.25111223154886
+      },
+      {
+        "timestamp": 1670849990044,
+        "incline": -3.2443859517452607,
+        "elevation": 29.37839538443336,
+        "currentDistance": 151.61998743830944
+      }
+    ]
+  }
+}

@@ -42,7 +42,7 @@ var treadmillInclineTimeArr = [];
 data.treadmill.measurements?.FTMS?.forEach(item => {
   treadmillInclineArr.push({
     'x': item.time,
-    'y': (item.inclination-10)
+    'y': parseFloat(item.inclination)-10.0
   });
   treadmillInclineTimeArr.push(item.time);
 });
@@ -186,8 +186,72 @@ const HeartRateChart = new Chart(document.getElementById('HeartRateChart'), conf
 // COMPARISON GRAPHS
 
 // Incline comparison graph
-const inclineComparison = {
+const inclineComparison1 = {
   labels: newTreadmillInclineTime,
+  datasets: [{
+    label: 'Treadmill incline',
+    backgroundColor: 'rgb(50, 50, 205)',
+    borderColor: 'rgb(50, 50, 205)',
+    pointRadius: 0,
+    data: treadmillInclineArr,
+  }]
+};
+const configInclineComparison1 = {
+  type: 'line',
+  data: inclineComparison1,
+  options: {
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Time (s)'
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Incline (%)'
+        }
+      }
+    }     
+  },
+};
+
+const inclineComparison2 = {
+  labels: newRealInclineTime,
+  datasets: [{
+    label: 'Route incline',
+    backgroundColor: 'rgb(205, 50, 50)',
+    borderColor: 'rgb(205, 50, 50)',
+    pointRadius: 0,
+    data: realInclineArr,
+  }]
+};
+const configInclineComparison2 = {
+  type: 'line',
+  data: inclineComparison2,
+  options: {
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Time (s)'
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Incline (%)'
+        }
+      }
+    }     
+  },
+};
+console.log(treadmillInclineArr);
+console.log(realInclineArr);
+
+const inclineComparison = {
+  labels: newRealInclineTime,
   datasets: [{
     label: 'Treadmill incline',
     backgroundColor: 'rgb(50, 50, 205)',
@@ -224,4 +288,6 @@ const configInclineComparison = {
 };
 
 // Comparisons
+const inclineComparisonChart1 = new Chart(document.getElementById('inclineComparisonChart1'), configInclineComparison1);
+const inclineComparisonChart2 = new Chart(document.getElementById('inclineComparisonChart2'), configInclineComparison2);
 const inclineComparisonChart = new Chart(document.getElementById('inclineComparisonChart'), configInclineComparison);
