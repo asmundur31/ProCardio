@@ -14,7 +14,7 @@ The main parts of our system are the Monark treadmill, TV screen, raspberry pi c
 
 Also our [Final Presentation](https://github.com/asmundur31/ProCardio/blob/main/ProCardioFinalPresentation.pdf)
 
-# Get started
+# Get started - Installation
 To use the software, it can be done in two ways.
 1. run it by visiting [ProCardio](https://treadmill.dev.kthcloud.com/home) the website
 2. run it on localhost
