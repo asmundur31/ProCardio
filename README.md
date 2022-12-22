@@ -108,6 +108,107 @@ You need to add this file to either
 
 For video we used the cloudinary service, but it could be anywhere.
 
+# Recordings
+
+Each recording consists of data from connected bluetooth devices and the calculated route.
+That is 
+* Experiment data (general info)
+* Treadmill data
+* Heartrate data
+* Route data (calculated from real scene)
+
+Example of a recording, where the treadmill was connected and heart rate monitor:
+
+        {
+          "experiment": {
+            "fileName": "recording_ParkRun_route_4e5fcf32-f990-4e9c-ab26-d5cde56d438f",
+            "name": "Park Run",
+            "type": "route",
+            "duration": 94054,
+            "startTime": 1670849896007,
+            "endTime": 1670849990061,
+            "devices": {
+              "treadmill": "raspberrypi",
+              "hr": "Polar Sense B37AD727"
+            }
+          },
+          "treadmill": {
+            "device": "raspberrypi",
+            "measurements": {
+              "FTMS": [
+                {
+                  "speed": "0.0",
+                  "inclination": "0.0",
+                  "distance": 320,
+                  "duration": 1212000,
+                  "prettyDuration": "00:20:12",
+                  "time": 1670849896803,
+                  "measurementType": "FTMS"
+                },
+                ... more treadmill data
+              ]
+            }
+          },
+          "hr": {
+            "device": "Polar Sense B37AD727",
+            "measurements": {
+              "HR": [
+                {
+                  "heartRate": 74,
+                  "time": 1670849896504,
+                  "measurementType": "HR"
+                },
+                ... more heart rate data
+              ]
+            }
+          },
+          "routeData": {
+            "dataPoints": [
+              {
+                "timestamp": 1670849899040,
+                "incline": -0.08258660419546235,
+                "elevation": 32.502663595304725,
+                "currentDistance": 0.40733566727484516
+              },
+              ... more route data
+            ]
+          }
+        }
+
+# Future improvements (ideas)
+
+Here we list a few ideas we had that we wanted to do but did not have time to do.
+
+## More detailed data analysis
+* Do more analytics on the data in the recording section.
+* Better overlay of data on video, could maybe include some graphs that update in real time.
+
+## Software controls
+* Make it possible for user to control the software from the treadmill. At the moment users need to run between the treadmill and the laptop to start a route.
+
+## Creating a new route
+* Create a software that makes it easier to create a new route.
+  * could be an mobile application that collects the elevation points and a GoPro camera to record the video. After the run is done then a user can upload the video to the app and it can be attached to the route data.
+  * Then people can choose between running from home or create a new route that later they or anyone can run.
+
+## Tutorial
+* Create a short video tutorial of how to use the software, apply it to any treadmill.
+
+## Raspberry pi
+* Can we simplify the connection with the treadmill? At the moment the raspberry pi computer works as an BLE connection.
+* Skip the raspberry pi computer and have a wired connection between the laptop and treadmill.
+
+## Login system
+* Allow users to create an account and have all their sessions/runs only available for them.
+
+## Implement tests
+* Fireman test
+* Police test
+* Parkinsons test
+* Pshycological test 
+  * The idea is to see if the heart rate will increase sooner if a person can see the struggles comming or not.
+  * That is does the body use visual data to prepear for phisical struggles.
+
 <p align="center">
   <img src="https://github.com/asmundur31/ProCardio/actions/workflows/build-and-push.yml/badge.svg" alt="build">
 </p>
