@@ -63,7 +63,25 @@ The cloudinary service is free (at least in december 2022).
 
         npm run prod
 
+# Execution of code
+After you have downloaded everything you are ready to run the code. Here is a system diagram that can help you understand how different parts of the system talk together.
+![System diagram!](./TreadmillSystemDiagram.png "System diagram")
 
+One assumption that the software makes is that the treadmill can go from -10% to 10% incline. So what we did is that we added tree bricks under the backside of the treadmill.
+
+All these components need to be connected before execution.
+
+1. Wired connections
+    * The rawsberry pi computer needs to be connected to the treadmill and running code called TreadmillService that a group from last year (2021) created. This code is written in python and impements BLE protocol.
+      * Sometimes the code crashes and does not work. Then you need to restart the treadmill.
+    * The laptop needs to be connected to a screen
+
+2. Wireless connections (all happens within software)
+    * When the software is running then the bluetooth connections are made.
+    * Connect laptop with treadmill through the rawsberry pi computer (within software).
+    * More sensors that have bluetooth protocol (for example heart rate sensor) (within software).
+
+Now your code should be working.
 # Add a new route/test
 
 How we added the routes/test was that we found a running video on [Youtube](https://www.youtube.com/) and collected a elevation data from Google Earth from the same routes as in the video.
