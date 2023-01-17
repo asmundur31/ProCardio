@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: treadmill
-        image: registry.kthcloud.com/treadmill/treadmill
+        image: registry.cloud.cbh.kth.se/treadmill/treadmill
         envFrom:
         - configMapRef:
             name: treadmill-configmap
