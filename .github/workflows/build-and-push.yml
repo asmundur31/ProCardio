@@ -19,7 +19,7 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          registry: registry.kthcloud.com
+          registry: registry.cloud.cbh.kth.se
           username: robot$treadmill+treadmill
           password: 3LdZ1YUGqZVqTPbjBsxGPhjWpfMXLPKc
           
